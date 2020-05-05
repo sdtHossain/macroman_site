@@ -168,7 +168,7 @@ textarea {
 body {
   background-color: #000;
   font-family: 'Raleway', sans-serif;
-
+  background-image: url("/img/bg.jpg");
 }
 
 p {
