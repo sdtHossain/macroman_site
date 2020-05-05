@@ -1,8 +1,8 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "MacromanHQ",
+  "name": "Macroman Solutions",
   "icons": [{
-    "src": "icon.png",
+    "src": "android-chrome-192x192.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
