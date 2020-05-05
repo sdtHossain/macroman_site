@@ -24,4 +24,12 @@ class BaseController extends AbstractController
     {
         return $this->redirect("https://docs.google.com/forms/d/e/1FAIpQLSdTDfoc_A0l7kuzL8wXl4fsxxDQtOgWLjFo1nNB2e4mdihsIQ/viewform?usp=sf_link");
     }
+
+    /**
+     * @Route("/jobs", name="home_job")
+     */
+    public function job()
+    {
+        return $this->render('base/job.html.twig');
+    }
 }
