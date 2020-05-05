@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/ext.css') }}">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
@@ -27,8 +29,12 @@
         <noscript><img height="1" width="1" style="display:none"
                        src="https://www.facebook.com/tr?id=3163746283690618&ev=PageView&noscript=1"
             /></noscript>
-        {% block body %}{% endblock %}
+        <main class="master-wrapper">
+            {% include 'base/nav.html.twig' %}
+            {% block body %}
 
+            {% endblock %}
+        </main>
 
         <script src="{{ asset('js/vendor/modernizr-3.8.0.min.js') }}"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -36,6 +42,7 @@
         <script src="{{ asset('js/vendor/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('js/plugins.js') }}"></script>
         <script src="{{ asset('js/main.js') }}"></script>
+        <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165338538-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
