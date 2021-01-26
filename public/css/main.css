@@ -286,3 +286,16 @@ p {
   line-height: 60px;
 }
 
+/* magic */
+
+html {
+  filter: invert(1) !important;
+}
+
+img {
+  filter: invert(1) !important;
+}
+
+svg {
+  filter: invert(1) !important;
+}
