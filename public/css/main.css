@@ -249,6 +249,31 @@ p {
   text-transform: uppercase;
 }
 
+/* Job */
+.job {
+  color: #fff;
+}
+
+.job p {
+  color: #dedede;
+}
+
+.job h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #c0c0c0;
+}
+
+.job h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.job div {
+  padding-left: 5px;
+}
+
 /* Contact Us */
 
 #contactus {
