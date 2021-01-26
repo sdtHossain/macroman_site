@@ -22,7 +22,7 @@ class BaseController extends AbstractController
      */
     public function jobApply()
     {
-        return $this->redirect("https://docs.google.com/forms/d/e/1FAIpQLSdTDfoc_A0l7kuzL8wXl4fsxxDQtOgWLjFo1nNB2e4mdihsIQ/viewform?usp=sf_link");
+        return $this->redirect('https://forms.gle/KvbHimutz3jgQsH8A');
     }
 
     /**
