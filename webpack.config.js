@@ -16,11 +16,7 @@ Encore
     .copyFiles({
         from: './assets/macromanhq-html/assets/img',
 
-        // optional target path, relative to the output dir
-        to: 'img/[path][name].[ext]',
-
-        // if versioning is enabled, add the file hash too
-        // to: 'images/[path][name].[hash:8].[ext]',
+        to: Encore.isProduction() ? 'img/[path][hash].[ext]': 'img/[path][name].[ext]',
 
         // only copy files matching this pattern
         pattern: /\.(png|jpg|jpeg)$/
