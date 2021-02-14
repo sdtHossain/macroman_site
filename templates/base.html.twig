@@ -18,7 +18,7 @@
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
-    <body class="home">
+    <body{% if is_page('home') %} class="home"{% endif %}>
         <div id="fb-root"></div>
         <div class="fb-customerchat"
              attribution=setup_tool
@@ -28,8 +28,13 @@
              logged_out_greeting="Welcome to Macroman Solutions. How may we help you? ">
         </div>
           <div class="vector-bg">
+            {% if is_page('home') %}
             <img src="{{ asset('build/img/home/banner_bg_top_tshirt.png') }}" class="top-bg home-top-bg" alt="">
             <img src="{{ asset('build/img/home/banner_bg_bottom_wide.png') }}" class="bot-bg home-bot-bg" alt="">
+            {% else %}
+            <img src="{{ asset('build/img/blog-post-typhography/header_bg.png') }}" class="top-bg home-top-bg" alt="">
+            <img src="{{ asset('build/img/blog-post-typhography/footer_bg.png') }}" class="bot-bg home-bot-bg" alt="">
+            {% endif %}
         </div>
         {% include 'inc/header.html.twig' %}
         <main class="site-main">

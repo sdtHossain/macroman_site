@@ -24,4 +24,9 @@
 			</div>
 		</div>
 	</nav>
+	{% if not is_page('home') %}
+	<div class="container">
+      <h1 class="text-white page-title text-center mb-0">{{ pageTitle|default('Page Title') }}</h1>
+    </div>
+	{% endif %}
 </header>
