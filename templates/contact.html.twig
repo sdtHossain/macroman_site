@@ -1,0 +1,69 @@
+{% extends "base.html.twig" %}
+
+{% use 'bootstrap_4_layout.html.twig' with form_label as base_form_label %}
+
+{% block form_label %}
+    {{ block('base_form_label') }}
+
+    {% if required %}
+        <span class="text-danger" title="This field is required">*</span>
+    {% endif %}
+{% endblock %}
+
+{% form_theme form _self %}
+
+{% block body %}
+
+    <!-- Contact Us Form -->
+    <div class="contact-form">
+      <div class="container">
+        <h2 class="text-center">Drop us a line</h2>
+        <div class="form-wrap bg-white">
+          {% for type, messages in app.flashes %}
+            {% for message in messages %}
+            <div class="alert alert-{{type}}">
+              {{ message }}
+            </div>
+            {% endfor %}
+          {% endfor %}
+          {{ form(form) }}
+        </div>
+      </div>
+    </div>
+    <!-- Get in touch -->
+    <div class="get-in-touch">
+      <div class="container">
+        <h2 class="text-center">Get in <span class="text-primary">Touch</span></h2>
+        <div class="d-flex justify-content-around">
+          <div class="d-flex location">
+            <div class="icons">
+              <i class="fas fa-map-marker-alt text-primary"></i>
+            </div>
+            <div>
+              <h3 class="text-primary mb-0">Location:</h3>
+              <p class="font-weight-semi-bold text-uppercase">H-40, A M Manjil, Sagorpara
+              <br>Rajshahi, Bangladesh</p>
+            </div>
+          </div>
+          <div class="d-flex email">
+            <div class="icons">
+              <i class="fas fa-paper-plane text-primary"></i>
+            </div>
+            <div>
+              <h3 class="text-primary mb-0">Email:</h3>
+              <p class="font-weight-semi-bold text-uppercase">hello@macromanhq.com</p>
+            </div>
+          </div>
+          <div class="d-flex call">
+            <div class="icons">
+              <i class="fas fa-mobile-alt text-primary"></i>
+            </div>
+            <div>
+              <h3 class="text-primary mb-0">Call Us:</h3>
+              <p class="font-weight-semi-bold text-uppercase">+880 173-591742</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
