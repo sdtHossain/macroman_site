@@ -1,0 +1,197 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div id="carouselMcm" class="carousel slide carousel-fade d-md-none d-sm-none d-none d-lg-block" data-ride="carousel" data-pause="false" data-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-target="#carouselMcm" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-target="#carouselMcm" data-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-target="#carouselMcm" data-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-target="#carouselMcm" data-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-target="#carouselMcm" data-slide-to="4" aria-label="Slide 3"></button>
+        <button type="button" data-target="#carouselMcm" data-slide-to="5" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Banner data analytics -->
+        <div class="carousel-item active banner data-analytics">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="banner-text">
+                <h1 class="font-kaushan-script text-primary font-weight-normal">Data Analytics</h1>
+              </div>
+              <div class="banner-image ml-auto">
+                <img src="{{ asset('build/img/home/banner_right_verctor_img_1.png') }}" class="img-fluid" alt="images here">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner web development -->
+        <div class="carousel-item banner web-development">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="banner-text">
+                <h1 class="font-kaushan-script text-primary font-weight-normal">Web Development</h1>
+              </div>
+              <div class="banner-image ml-auto">
+                <img src="{{ asset('build/img/home/banner_right_verctor_img_2.png') }}" class="img-fluid" alt="images here">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner software service -->
+        <div class="carousel-item banner software-service">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="banner-text">
+                <h1 class="font-kaushan-script text-primary font-weight-normal">Software<span class="d-block">as a</span><span class="d-block">Service</span></h1>
+              </div>
+              <div class="banner-image ml-auto">
+                <img src="{{ asset('build/img/home/banner_right_verctor_img_5.png') }}" class="img-fluid" alt="images here">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner market analysis -->
+        <div class="carousel-item banner market-analysis">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="banner-text">
+                <h1 class="font-kaushan-script text-primary font-weight-normal">Market<br>Analysis</h1>
+              </div>
+              <div class="banner-image ml-auto">
+                <img src="{{ asset('build/img/home/banner_right_verctor_img_4.png') }}" class="img-fluid" alt="images here">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner app development -->
+        <div class="carousel-item banner app-development">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="banner-text">
+                <h1 class="font-kaushan-script text-primary font-weight-normal">App Development</h1>
+              </div>
+              <div class="banner-image ml-auto">
+                <img src="{{ asset('build/img/home/banner_right_verctor_img_6.png') }}" class="img-fluid" alt="images here">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner consultancy -->
+        <div class="carousel-item banner consultancy">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div class="banner-text">
+                <h1 class="font-kaushan-script text-primary font-weight-normal">Consultancy</h1>
+              </div>
+              <div class="banner-image ml-auto">
+                <img src="{{ asset('build/img/home/banner_right_verctor_img_3.png') }}" class="img-fluid" alt="images here">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service -->
+    <div class="service">
+      <div class="container">
+        <div class="d-flex">
+          <div class="service-text">
+            <h2 class="section-title">
+              <span class="text-primary">Services</span><br><span class="text-black">We Provide</span>
+            </h2>
+            <p>With some of the Best Engineers in the business and 10 years of Experience on Our back, Macroman Solutions stand at a Unique Position to help you grow your business in the world of Modern Technology.
+            </p>
+          </div>
+          <div class="service-image d-none d-sm-block">
+            <img src="{{ asset('build/img/home/service_right_img.png') }}" alt="image here" class="img-fluid">
+          </div>
+        </div>
+        <div class="row service-item-wrap">
+          <div class="col-lg-6">
+            <div class="service-item bg-white d-flex">
+              <div class="service-icon flex-shrink-0 bg-primary-90">
+                <img src="{{ asset('build/img/home/service_icon_1.png') }}" alt="icon here">
+              </div>
+              <div>
+                <h4 class="">Data Analytics</h4>
+                <p>With out cutting-edge Data Analytics Model, We can provide you with data point you never realized you needed so much for a successful business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item bg-white d-flex">
+              <div class="service-icon flex-shrink-0 bg-primary-50">
+                <img src="{{ asset('build/img/home/service_icon_2.png') }}" alt="icon here">
+              </div>
+              <div>
+                <h4 class="">Web Development</h4>
+                <p>From your Next Corporate Website to Your own eCommerce Shop, might as well be a marketing funnel, We got you covered.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item bg-white d-flex">
+              <div class="service-icon flex-shrink-0 bg-primary-50">
+                <img src="{{ asset('build/img/home/service_icon_3.png') }}" alt="icon here">
+              </div>
+              <div>
+                <h4 class="">Consultancy</h4>
+                <p>Starting a new business? Want to Revamp your old Business? We have experts that have been helping people for years to grow their business to a new level.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item bg-white d-flex">
+              <div class="service-icon flex-shrink-0 bg-primary-90">
+                <img src="{{ asset('build/img/home/service_icon_4.png') }}" alt="icon here">
+              </div>
+              <div>
+                <h4 class="">Market Analysis</h4>
+                <p>Every market is unique, Every Segment is unknown. We do in-depth market analysis to provide you with a details overview of the market.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item bg-white d-flex">
+              <div class="service-icon flex-shrink-0 bg-primary-90">
+                <img src="{{ asset('build/img/home/service_icon_5.png') }}" alt="icon here">
+              </div>
+              <div>
+                <h4 class="">Software as a Service</h4>
+                <p>We have a uniquely qualified team that can build your next software as a service platform, Efficiently, eloquently.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="service-item bg-white d-flex">
+              <div class="service-icon flex-shrink-0 bg-primary-50">
+                <img src="{{ asset('build/img/home/service_icon_6.png') }}" alt="icon here">
+              </div>
+              <div>
+                <h4 class="">App Development</h4>
+                <p>In the days of a tiny Computer in your hand, you need to keep your game up, Put your business right into your Customers Hand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- What makes different -->
+    <div class="what-different">
+      <div class="container">
+        <div class="what-different-content position-relative bg-white text-center">
+          <h2 class="section-title">
+            <span class="text-black">What Makes Us</span> <span class="text-primary">Different?</span>
+          </h2>
+          <p>Truth be told, we are a bunch of people who loves Technology and to build something amazing with it. In our heart we truly understand what it takes to cut through the noise and get the job done. Our team consists of experts from all over the world, having an average of 10 years of experience on their respective field. We take your business into consideration, the nitty gritty details noted and your passion understood.
+          </p>
+
+          <a href="#" class="btn btn-primary text-white btn-with-shadow font-weight-bold">Let's Talk</a>
+
+          <div class="bottom-images">
+            <img src="{{ asset('build/img/home/what_different_icon_left.png') }}" class="img-fluid left-img position-absolute" alt="images here">
+            <img src="{{ asset('build/img/home/what_different_icon_right.png') }}" class="img-fluid right-img position-absolute" alt="images here">
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
