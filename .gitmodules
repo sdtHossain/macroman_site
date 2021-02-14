@@ -1,0 +1,3 @@
+[submodule "assets/macromanhq-html"]
+	path = assets/macromanhq-html
+	url = git@github.com:macromanhq/macromanhq-html.git
