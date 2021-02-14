@@ -19,7 +19,7 @@ Encore
         to: Encore.isProduction() ? 'img/[path][hash].[ext]': 'img/[path][name].[ext]',
 
         // only copy files matching this pattern
-        pattern: /\.(png|jpg|jpeg)$/
+        pattern: /\.(png|jpg|jpeg|svg)$/
     })
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
