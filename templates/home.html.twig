@@ -10,84 +10,12 @@
         <button type="button" data-target="#carouselMcm" data-slide-to="5" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <!-- Banner data analytics -->
-        <div class="carousel-item active banner data-analytics">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <div class="banner-text">
-                <h1 class="font-kaushan-script text-primary font-weight-normal">Data Analytics</h1>
-              </div>
-              <div class="banner-image ml-auto">
-                <img src="{{ asset('build/img/home/banner_right_verctor_img_1.png') }}" class="img-fluid" alt="images here">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Banner web development -->
-        <div class="carousel-item banner web-development">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <div class="banner-text">
-                <h1 class="font-kaushan-script text-primary font-weight-normal">Web Development</h1>
-              </div>
-              <div class="banner-image ml-auto">
-                <img src="{{ asset('build/img/home/banner_right_verctor_img_2.png') }}" class="img-fluid" alt="images here">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Banner software service -->
-        <div class="carousel-item banner software-service">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <div class="banner-text">
-                <h1 class="font-kaushan-script text-primary font-weight-normal">Software<span class="d-block">as a</span><span class="d-block">Service</span></h1>
-              </div>
-              <div class="banner-image ml-auto">
-                <img src="{{ asset('build/img/home/banner_right_verctor_img_5.png') }}" class="img-fluid" alt="images here">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Banner market analysis -->
-        <div class="carousel-item banner market-analysis">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <div class="banner-text">
-                <h1 class="font-kaushan-script text-primary font-weight-normal">Market<br>Analysis</h1>
-              </div>
-              <div class="banner-image ml-auto">
-                <img src="{{ asset('build/img/home/banner_right_verctor_img_4.png') }}" class="img-fluid" alt="images here">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Banner app development -->
-        <div class="carousel-item banner app-development">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <div class="banner-text">
-                <h1 class="font-kaushan-script text-primary font-weight-normal">App Development</h1>
-              </div>
-              <div class="banner-image ml-auto">
-                <img src="{{ asset('build/img/home/banner_right_verctor_img_6.png') }}" class="img-fluid" alt="images here">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Banner consultancy -->
-        <div class="carousel-item banner consultancy">
-          <div class="container">
-            <div class="d-flex justify-content-between">
-              <div class="banner-text">
-                <h1 class="font-kaushan-script text-primary font-weight-normal">Consultancy</h1>
-              </div>
-              <div class="banner-image ml-auto">
-                <img src="{{ asset('build/img/home/banner_right_verctor_img_3.png') }}" class="img-fluid" alt="images here">
-              </div>
-            </div>
-          </div>
-        </div>
+        {% include 'inc/carousel/frag_data_analytics.html.twig' %}
+        {% include 'inc/carousel/frag_software_service.html.twig' %}
+        {% include 'inc/carousel/frag_market_analysis.html.twig' %}
+        {% include 'inc/carousel/frag_consultancy.html.twig' %}
+        {% include 'inc/carousel/frag_app_development.html.twig' %}
+        {% include 'inc/carousel/frag_web_development.html.twig' %}
       </div>
     </div>
     <!-- Service -->
