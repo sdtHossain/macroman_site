@@ -10,15 +10,14 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				{# TO DO: find easy way to apply .active into navbar #}
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
+					<li class="nav-item {% if is_page('home') %}active{% endif %}">
 						<a class="nav-link font-maven-pro" href="/">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item {% if is_page('job') %}active{% endif %}">
 						<a class="nav-link font-maven-pro" href="/jobs">Jobs</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item {% if is_page('contact') %}active{% endif %}">
 						<a class="nav-link font-maven-pro pr-0" href="/contact">Contact</a>
 					</li>
 				</ul>
