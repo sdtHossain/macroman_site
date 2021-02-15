@@ -27,9 +27,28 @@ class BaseController extends AbstractController
     }
 
     /**
-     * @Route("/jobs", name="job")
+     * @Route("/jobs", name="job_list")
      */
-    public function job()
+    public function jobList()
+    {
+        return $this->render('job_list.html.twig', [
+            'pageTitle' => 'Jobs',
+        ]);
+    }
+
+    /**
+     * @Route("/job", name="job_latest")
+     */
+    public function jobLatest()
+    {
+        //TODO: redirect to latest job post.
+        return $this->redirectToRoute('job_post', ['slug' => 'foo']);
+    }
+
+    /**
+     * @Route("/job/{slug}", name="job_post")
+     */
+    public function jobPost()
     {
         return $this->render('job_post.html.twig', [
             'pageTitle' => 'Software Engineer Recruitment',
