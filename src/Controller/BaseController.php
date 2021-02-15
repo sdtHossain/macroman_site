@@ -31,7 +31,9 @@ class BaseController extends AbstractController
      */
     public function job()
     {
-        return $this->render('base/job.html.twig');
+        return $this->render('job_post.html.twig', [
+            'pageTitle' => 'Software Engineer Recruitment',
+        ]);
     }
 
     /**
