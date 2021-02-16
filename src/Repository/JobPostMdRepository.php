@@ -45,6 +45,8 @@ class JobPostMdRepository
             $result[$slug] = $jobPost;
         }
 
+        \uasort($result, fn ($a, $b) => ($a->getPublishedAt() > $b->getPublishedAt()) ? -1 : 1);
+
         return $result;
     }
 }
