@@ -99,9 +99,6 @@
     "laminas/laminas-zendframework-bridge": {
         "version": "1.1.1"
     },
-    "michelf/php-markdown": {
-        "version": "1.9.0"
-    },
     "monolog/monolog": {
         "version": "2.2.0"
     },
@@ -550,9 +547,6 @@
     },
     "twig/extra-bundle": {
         "version": "v3.2.1"
-    },
-    "twig/markdown-extra": {
-        "version": "v3.3.0"
     },
     "twig/twig": {
         "version": "v3.2.1"
