@@ -5,7 +5,7 @@ jobCategory: Engineer
 vacancy: 2
 publishedAt: 2020-05-02
 openUntil: 2020-02-08
-open: true
+open: false
 applyUrl: https://forms.gle/u9QiCcovYcZHfUW46
 ---
 
