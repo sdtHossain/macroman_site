@@ -9,8 +9,6 @@ open: false
 applyUrl: https://forms.gle/u9QiCcovYcZHfUW46
 ---
 
-# Software Ninja Hunting
-
 We are a startup based in Bangladesh, currently looking for some PHP Superstars, focusing on Laravel or Symfony. Performance Bonus, Festival Bonus, and yearly Increment with a lucrative salary.
 
 ## Company
