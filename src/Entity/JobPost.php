@@ -62,6 +62,11 @@ class JobPost
      */
     private $slug;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $jobCategory;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -171,6 +176,18 @@ class JobPost
     public function setSlug(string $slug): self
     {
         $this->slug = $slug;
+
+        return $this;
+    }
+
+    public function getJobCategory(): ?string
+    {
+        return $this->jobCategory;
+    }
+
+    public function setJobCategory(string $jobCategory): self
+    {
+        $this->jobCategory = $jobCategory;
 
         return $this;
     }

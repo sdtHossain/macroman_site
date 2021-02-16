@@ -1,6 +1,7 @@
 ---
 title: Software Engineer RR
 jobType: Full Time (Remote)
+jobCategory: Engineer
 vacancy: 2
 publishedAt: 2021-02-18
 openUntil: 2021-02-25

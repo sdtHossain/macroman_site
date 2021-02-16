@@ -18,6 +18,7 @@ class Markdown
     const FrontMatterFields = [
         'title',
         'jobType',
+        'jobCategory',
         'vacancy',
         'publishedAt',
         'openUntil',
