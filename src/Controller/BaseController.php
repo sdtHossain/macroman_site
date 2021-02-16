@@ -48,7 +48,7 @@ class BaseController extends AbstractController
     public function jobLatest()
     {
         //TODO: redirect to latest job post.
-        return $this->redirectToRoute('job_post', ['slug' => 'job_post_2021']);
+        return $this->redirectToRoute('job_post', ['slug' => 'software_engineer_q1_21']);
     }
 
     /**
