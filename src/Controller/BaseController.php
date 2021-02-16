@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Form\ContactUsType;
+use App\Repository\JobPostMdRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -19,20 +20,25 @@ class BaseController extends AbstractController
     }
 
     /**
-     * @Route("/apply", name="apply")
+     * @Route("/apply/{slug}", name="job_apply")
      */
-    public function jobApply()
+    public function jobApply(JobPostMdRepository $mdRepo, $slug)
     {
-        return $this->redirect('https://forms.gle/KvbHimutz3jgQsH8A');
+        $job = $mdRepo->findOneBySlug($slug);
+
+        return $this->redirect($job->getApplyUrl());
     }
 
     /**
      * @Route("/jobs", name="job_list")
      */
-    public function jobList()
+    public function jobList(JobPostMdRepository $mdRepo)
     {
+        $jobs = $mdRepo->findBy();
+
         return $this->render('job_list.html.twig', [
             'pageTitle' => 'Jobs',
+            'jobs' => $jobs,
         ]);
     }
 
@@ -42,16 +48,19 @@ class BaseController extends AbstractController
     public function jobLatest()
     {
         //TODO: redirect to latest job post.
-        return $this->redirectToRoute('job_post', ['slug' => 'foo']);
+        return $this->redirectToRoute('job_post', ['slug' => 'job_post_2021']);
     }
 
     /**
      * @Route("/job/{slug}", name="job_post")
      */
-    public function jobPost()
+    public function jobPost(JobPostMdRepository $mdRepo, $slug)
     {
+        $job = $mdRepo->findOneBySlug($slug);
+
         return $this->render('job_post.html.twig', [
-            'pageTitle' => 'Software Engineer Recruitment',
+            'pageTitle' => $job->getTitle(),
+            'job' => $job,
         ]);
     }
 

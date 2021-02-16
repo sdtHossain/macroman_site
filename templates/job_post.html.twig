@@ -5,6 +5,12 @@
     <div class="container job">
       {{ job.content | raw }}
 
-      <a href="https://macromanhq.com/apply/{{job.slug}}" class="btn btn-primary text-white btn-with-shadow text-uppercase" target="_blank">Apply Now</a>
+      <a href="{{ path('job_apply', {slug: job.slug}) }}" class="btn btn-primary text-white btn-with-shadow text-uppercase {% if not job.open %}disabled{% endif %}" target="_blank">
+      {% if job.open %}
+      Apply Now
+      {% else %}
+      Closed
+      {% endif %}
+      </a>
     </div>
 {% endblock %}
