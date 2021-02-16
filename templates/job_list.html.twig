@@ -35,11 +35,15 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="text-center"><a href="#" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">{% if job.open %}
+					<div class="text-center">
+						<a href="#" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">
+							{% if job.open %}
 							Apply Now
 							{% else %}
 							Closed
-							{% endif %}</a></div>
+							{% endif %}
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
