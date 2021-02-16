@@ -2,15 +2,16 @@
 
 {% block body %}
 
-    <div class="container job">
-      {{ job.content | raw }}
-
-      <a href="{{ path('job_apply', {slug: job.slug}) }}" class="btn btn-primary text-white btn-with-shadow text-uppercase {% if not job.open %}disabled{% endif %}" target="_blank">
-      {% if job.open %}
-      Apply Now
-      {% else %}
-      Closed
-      {% endif %}
-      </a>
-    </div>
+<div class="container job">
+	{{ job.content | raw }}
+	<div class="text-center">
+		<a href="{{ path('job_apply', {slug: job.slug}) }}" class="btn btn-primary text-white btn-with-shadow text-uppercase {% if not job.open %}disabled{% endif %}" target="_blank"></a>
+	</div>
+	{% if job.open %}
+	Apply Now
+	{% else %}
+	Closed
+	{% endif %}
+	</a>
+</div>
 {% endblock %}
