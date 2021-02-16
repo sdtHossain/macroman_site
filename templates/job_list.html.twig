@@ -1,43 +1,49 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <!-- Job Post -->
-    <div class="jobs">
-      <div class="container">
-        
-        {% for job in jobs %}
-        <div class="single-job-post d-lg-flex align-items-center justify-content-between position-relative">
-          <div class="tags text-uppercase text-primary font-weight-bold position-absolute">
-            <span>{{ job.jobCategory }}</span>
-          </div>
-          <div class="job-details">
-            <h4 class="font-weight-bold">{{ job.title }}</h4>
-            <p>
-              Job Type: <span class="job-type">{{ job.jobType }}</span>
-            </p>
-          </div>
-          <div class="experience">
-            <h5 class="font-weight-medium">Vacancy</h5>
-            <p>
-              <span class="exp-year">{{ job.vacancy }}</span>
-            </p>
-          </div>
-          <div class="deadline">
-            <h5 class="font-weight-medium">Deadline</h5>
-            <p>
-              <span class="deadline-date">{{ job.openUntil | date('Y-m-d') }}</span>
-            </p>
-          </div>
-          <a href="{{ path('job_post', {slug: job.slug}) }}" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">
-          {% if job.open %}
-          Apply Now
-          {% else %}
-          Closed
-          {% endif %}
-          </a>
-        </div>
-        {% endfor %}
-
-      </div>
-    </div>
+<!-- Job Post -->
+<div class="jobs">
+	<div class="container">
+		{% for job in jobs %}
+		<div class="single-job-post position-relative">
+			<div class="tags text-uppercase text-primary font-weight-bold position-absolute">
+				<span>{{ job.jobCategory }}</span>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="job-details">
+						<h4 class="font-weight-bold">{{ job.title }}</h4>
+						<p>
+							Job Type: <span class="job-type">{{ job.jobType }}</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="vacancy">
+						<h5 class="font-weight-medium">Vacancy</h5>
+						<p>
+							<span class="vacancy-no">{{ job.vacancy }}</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="deadline">
+						<h5 class="font-weight-medium">Deadline</h5>
+						<p>
+							<span class="deadline-date">{{ job.openUntil | date('Y-m-d') }} (8 days left)</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="text-center"><a href="#" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">{% if job.open %}
+							Apply Now
+							{% else %}
+							Closed
+							{% endif %}</a></div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
 {% endblock %}
