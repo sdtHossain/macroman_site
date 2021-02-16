@@ -3,6 +3,8 @@
 {% block body %}
 
     <div class="container job">
-      {{ include('post/job_post_2021.markdown.twig')|markdown_to_html }}
+      {{ job.content | raw }}
+
+      <a href="https://macromanhq.com/apply/{{job.slug}}" class="btn btn-primary text-white btn-with-shadow text-uppercase" target="_blank">Apply Now</a>
     </div>
 {% endblock %}

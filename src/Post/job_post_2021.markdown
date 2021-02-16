@@ -1,19 +1,23 @@
+---
+title: Software Engineer RR
+jobType: Full Time (Remote)
+vacancy: 2
+publishedAt: 2021-02-18
+openUntil: 2021-02-25
+open: true
+applyUrl: https://forms.gle/KvbHimutz3jgQsH8A
+---
+
 ## About
 
-<p class="lead">
-<span class="brand title">Macroman Solutions</span> is a startup based in Bangladesh, we are a bunch of people who love Technology and to build something amazing with it. Our main focus is to develop complete business solutions for businesses to make their life easier. We believe in transparency, a simplified work environment, and a helpful mentality.
-</p>
+**Macroman Solutions** is a startup based in Bangladesh, we are a bunch of people who love Technology and to build something amazing with it. Our main focus is to develop complete business solutions for businesses to make their life easier. We believe in transparency, a simplified work environment, and a helpful mentality. {.lead}
 
-<p class="lead small">
-Recently, we have received over half a million dollar worth investment from venture capitals in one of our Product.
-</p>
+Recently, we have received over half a million dollar worth investment from venture capitals in one of our Product. {.lead .small}
 
 ## Job Description
 As a software engineer you'll be involved with the whole development cycle.
 
-<p class="list title">
-You will:
-</p>
+You will: {.list .title}
 
 - Plan the technical specifications and architecture of new features and changes
 - Write high quality, testable code solo and with a pair
@@ -21,9 +25,7 @@ You will:
 - Address security and technical debt as it arises
 - Ensure deployments succeed and that production systems stay up
 
-<p class="list title">
-You should have:
-</p>
+You should have: {.list .title}
 
 - Solid grasp of OOP and be able to develop a complete solution following the design pattern
 - Solid understanding of Symfony/Laravel frameworks and their individual components
@@ -92,9 +94,6 @@ Now that you know a little more about what you'll do and the impact you'll have,
 
 ## How to Apply
 
-Fill out the form at https://macromanhq.com/apply ( It’s a Google Form, May require you to log in via Google Account )
+Click *Apply Now*  and fill out the form ( It’s a Google Form, May require you to log in via Google Account )
 
 Thanks for taking a look!
-
-
-<a href="https://macromanhq.com/apply" class="btn btn-primary text-white btn-with-shadow text-uppercase" target="_blank">Apply Now</a>
