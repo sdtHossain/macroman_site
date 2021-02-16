@@ -30,8 +30,12 @@ class PageAwarenessExtension extends AbstractExtension
         ];
     }
 
-    public function isPage($name)
+    public function isPage($name, $matchParent = false)
     {
+        if ($matchParent) {
+            return \str_starts_with($this->req->attributes->get('_route'), $name);
+        }
+
         return $this->req->attributes->get('_route') == $name;
     }
 }
