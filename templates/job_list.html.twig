@@ -25,7 +25,7 @@
           <div class="deadline">
             <h5 class="font-weight-medium">Deadline</h5>
             <p>
-              <span class="deadline-date">{{ job.openUntil | date('Y-m-d') }} (12 days left)</span>
+              <span class="deadline-date">{{ job.openUntil | date('Y-m-d') }}</span>
             </p>
           </div>
           <a href="{{ path('job_post', {slug: job.slug}) }}" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">
