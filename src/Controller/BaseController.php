@@ -4,8 +4,10 @@ namespace App\Controller;
 
 use App\Form\ContactUsType;
 use App\Repository\JobPostMdRepository;
+use Symfony\Bridge\Twig\Mime\NotificationEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 class BaseController extends AbstractController
@@ -67,7 +69,7 @@ class BaseController extends AbstractController
     /**
      * @Route("/contact", name="contact")
      */
-    public function contact(Request $request)
+    public function contact(Request $request, MailerInterface $mailer, string $adminEmail)
     {
         $form = $this->createForm(ContactUsType::class);
 
@@ -75,7 +77,20 @@ class BaseController extends AbstractController
             $form->submit($request->request->get($form->getName()));
 
             if ($form->isSubmitted() && $form->isValid()) {
-                //TODO: send email.
+                $data = $form->getData();
+
+                $mailer->send(
+                    (NotificationEmail::asPublicEmail())
+                    ->subject($data['subject'])
+                    ->htmlTemplate('@email/default/notification/body.html.twig')
+                    ->from($adminEmail)
+                    ->to($adminEmail)
+                    ->context([
+                        'importance' => null,
+                        'content' => $data['message'],
+                        'footer_text' => 'Website Contact from: '.$data['name'].' <'.$data['email'].'>',
+                    ])
+                );
 
                 $this->addFlash('success', 'Message Submitted Successfully');
 
