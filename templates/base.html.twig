@@ -14,20 +14,9 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
     </head>
     <body{% if is_page('home') %} class="home"{% endif %}>
-        <div id="fb-root"></div>
-        <div class="fb-customerchat"
-             attribution=setup_tool
-             page_id="107564354274930"
-             theme_color="#000000"
-             logged_in_greeting="Welcome to Macroman Solutions. How may we help you? "
-             logged_out_greeting="Welcome to Macroman Solutions. How may we help you? ">
-        </div>
-          <div class="vector-bg">
+        <div class="vector-bg">
             {% if is_page('home') %}
             <img src="{{ asset('build/img/home/banner_bg_top_tshirt.png') }}" class="top-bg home-top-bg" alt="">
             <img src="{{ asset('build/img/home/banner_bg_bottom_wide.png') }}" class="bot-bg home-bot-bg" alt="">
@@ -43,5 +32,9 @@
             {% endblock %}
         </main>
         {% include 'inc/footer.html.twig' %}
+        {% include 'inc/tracker.html.twig' %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
     </body>
 </html>
