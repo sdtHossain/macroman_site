@@ -36,7 +36,7 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="text-center">
-						<a href="#" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">
+						<a href="{{ path('job_post', {slug: job.slug}) }}" class="btn btn-outline-primary btn-with-shadow font-weight-bold mt-0 {% if not job.open %}disabled{% endif %}">
 							{% if job.open %}
 							Apply Now
 							{% else %}
