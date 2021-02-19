@@ -3,8 +3,8 @@ title: Software Engineer Recruitment
 jobType: Full Time (Remote)
 jobCategory: Engineer
 vacancy: 2
-publishedAt: 2021-02-18
-openUntil: 2021-02-25
+publishedAt: 2021-02-20
+openUntil: 2021-02-27
 open: true
 applyUrl: https://forms.gle/KvbHimutz3jgQsH8A
 ---
