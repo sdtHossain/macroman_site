@@ -1,8 +1,11 @@
 {
     "devDependencies": {
         "@symfony/webpack-encore": "^1.0.0",
+        "autoprefixer": "^10.2.4",
         "core-js": "^3.0.0",
         "file-loader": "^6.0.0",
+        "postcss": "^8.2.6",
+        "postcss-loader": "^5.0.0",
         "regenerator-runtime": "^0.13.2",
         "sass": "^1.32.7",
         "sass-loader": "^11.0.0",
@@ -24,5 +27,8 @@
         "bootstrap": "^4.6.0",
         "jquery": "^3.5.1",
         "popper.js": "^1.16.1"
-    }
+    },
+    "browserslist": [
+        "defaults"
+    ]
 }
