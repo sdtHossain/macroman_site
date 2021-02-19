@@ -3,6 +3,8 @@
 namespace App\Twig;
 
 use Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface;
+use Symfony\Contracts\Cache\CacheInterface;
+use Symfony\Contracts\Cache\ItemInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
@@ -10,8 +12,12 @@ class ImgAttrExtension extends AbstractExtension
 {
     private $publicDir;
 
-    public function __construct(ContainerBagInterface $containerBag)
+    /** @var CacheInterface */
+    private $cache;
+
+    public function __construct(ContainerBagInterface $containerBag, CacheInterface $cache)
     {
+        $this->cache = $cache;
         $this->publicDir = $containerBag->get('kernel.project_dir').'/public';
     }
 
@@ -31,7 +37,12 @@ class ImgAttrExtension extends AbstractExtension
     public function renderImageAttributes($url)
     {
         $imgTag = "src=\"$url\"";
-        $sizeInfo = \getimagesize($this->publicDir.$url);
+
+        $imgFile = $this->publicDir.$url;
+
+        $sizeInfo = $this->cache->get('item_0', function (ItemInterface $item) use ($imgFile) {
+            return \getimagesize($imgFile);
+        });
 
         if ($sizeInfo && \is_array($sizeInfo)) {
             if ($sizeInfo[0] > 0 && $sizeInfo[1] > 0) {
