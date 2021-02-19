@@ -40,7 +40,7 @@ class ImgAttrExtension extends AbstractExtension
 
         $imgFile = $this->publicDir.$url;
 
-        $sizeInfo = $this->cache->get('item_0', function (ItemInterface $item) use ($imgFile) {
+        $sizeInfo = $this->cache->get('img_'.\md5($url), function (ItemInterface $item) use ($imgFile) {
             return \getimagesize($imgFile);
         });
 
