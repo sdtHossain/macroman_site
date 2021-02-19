@@ -18,11 +18,11 @@
     <body{% if is_page('home') %} class="home"{% endif %}>
         <div class="vector-bg">
             {% if is_page('home') %}
-            <img src="{{ asset('build/img/home/banner_bg_top_tshirt.png') }}" class="top-bg home-top-bg" alt="">
-            <img src="{{ asset('build/img/home/banner_bg_bottom_wide.png') }}" class="bot-bg home-bot-bg" alt="">
+            <img {{ img_attrs(asset('build/img/home/banner_bg_top_tshirt.png')) }} class="top-bg home-top-bg" alt="">
+            <img {{ img_attrs(asset('build/img/home/banner_bg_bottom_wide.png')) }} class="bot-bg home-bot-bg" alt="">
             {% else %}
-            <img src="{{ asset('build/img/blog-post-typhography/header_bg.png') }}" class="top-bg home-top-bg" alt="">
-            <img src="{{ asset('build/img/blog-post-typhography/footer_bg.png') }}" class="bot-bg home-bot-bg" alt="">
+            <img {{ img_attrs(asset('build/img/blog-post-typhography/header_bg.png')) }} class="top-bg home-top-bg" alt="">
+            <img {{ img_attrs(asset('build/img/blog-post-typhography/footer_bg.png')) }} class="bot-bg home-bot-bg" alt="">
             {% endif %}
         </div>
         {% include 'inc/header.html.twig' %}
