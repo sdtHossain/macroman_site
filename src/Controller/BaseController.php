@@ -4,19 +4,74 @@ namespace App\Controller;
 
 use App\Form\ContactUsType;
 use App\Repository\JobPostMdRepository;
+use Leogout\Bundle\SeoBundle\Provider\SeoGeneratorProvider;
 use Symfony\Bridge\Twig\Mime\NotificationEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Asset\Packages;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 class BaseController extends AbstractController
 {
+    /** @var SeoGeneratorProvider */
+    private $seo;
+
+    /** @var Request */
+    private $request;
+
+    /** @var Packages */
+    private $assetPackages;
+
+    public function __construct(SeoGeneratorProvider $seo, RequestStack $requestStack, Packages $assetPackages)
+    {
+        $this->seo = $seo;
+        $this->request = $requestStack->getCurrentRequest();
+        $this->assetPackages = $assetPackages;
+    }
+
+    private function setSeo($title, $description)
+    {
+        if (null != $title) {
+            $this->seo->get('basic')
+                ->setTitle($title);
+
+            $this->seo->get('og')
+                ->setTitle($title);
+
+            $this->seo->get('twitter')
+                ->setTitle($title);
+        }
+        if (null != $description) {
+            $this->seo->get('basic')
+                ->setDescription($description);
+
+            $this->seo->get('og')
+                ->setDescription($description);
+
+            $this->seo->get('twitter')
+                ->setDescription($description);
+        }
+
+        $image = $this->request->getUriForPath($this->assetPackages->getUrl('build/img/home/og-min-wide.png'));
+        $uri = $this->request->getUri();
+
+        $this->seo->get('og')
+            ->setImage($image)
+            ->setUrl($uri);
+
+        $this->seo->get('twitter')
+            ->setImage($image);
+    }
+
     /**
      * @Route("/", name="home")
      */
-    public function index()
+    public function index(Request $request)
     {
+        $this->setSeo(null, null);
+
         return $this->render('home.html.twig', [
         ]);
     }
@@ -24,7 +79,7 @@ class BaseController extends AbstractController
     /**
      * @Route("/apply/{slug}", name="job_apply")
      */
-    public function jobApply(JobPostMdRepository $mdRepo, $slug)
+    public function jobApply(Request $request, JobPostMdRepository $mdRepo, $slug)
     {
         $job = $mdRepo->findOneBySlug($slug);
 
@@ -34,9 +89,11 @@ class BaseController extends AbstractController
     /**
      * @Route("/jobs", name="job_list")
      */
-    public function jobList(JobPostMdRepository $mdRepo)
+    public function jobList(Request $request, JobPostMdRepository $mdRepo)
     {
         $jobs = $mdRepo->findBy();
+
+        $this->setSeo('Jobs - Macroman Solutions', null);
 
         return $this->render('job_list.html.twig', [
             'pageTitle' => 'Jobs',
@@ -56,9 +113,11 @@ class BaseController extends AbstractController
     /**
      * @Route("/job/{slug}", name="job_post")
      */
-    public function jobPost(JobPostMdRepository $mdRepo, $slug)
+    public function jobPost(Request $request, JobPostMdRepository $mdRepo, $slug)
     {
         $job = $mdRepo->findOneBySlug($slug);
+
+        $this->setSeo($job->getTitle().' - Macroman Solutions', null);
 
         return $this->render('job_post.html.twig', [
             'pageTitle' => $job->getTitle(),
@@ -71,6 +130,8 @@ class BaseController extends AbstractController
      */
     public function contact(Request $request, MailerInterface $mailer, string $adminEmail)
     {
+        $this->setSeo('Contact Us - Macroman Solutions', null);
+
         $form = $this->createForm(ContactUsType::class);
 
         if ($request->isMethod('POST')) {
