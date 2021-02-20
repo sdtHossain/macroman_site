@@ -52,7 +52,7 @@ The main focus of Macroman Solution is to build sophisticated yet easier to oper
 
 - Different level of integration with eCommerce related service
 - Products that helps vendor's to take their business online
-- Analysis of data to focus on area's that offers more oppertunity 
+- Analysis of data to focus on area's that offers more opportunity 
 
 
 ## Our Requirements
