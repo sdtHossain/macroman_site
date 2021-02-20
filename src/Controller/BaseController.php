@@ -128,7 +128,7 @@ class BaseController extends AbstractController
     /**
      * @Route("/contact", name="contact")
      */
-    public function contact(Request $request, MailerInterface $mailer, string $adminEmail)
+    public function contact(Request $request, MailerInterface $mailer, string $adminEmail, string $senderEmail)
     {
         $this->setSeo('Contact Us - Macroman Solutions', null);
 
@@ -144,10 +144,9 @@ class BaseController extends AbstractController
                     (NotificationEmail::asPublicEmail())
                     ->subject($data['subject'])
                     ->htmlTemplate('@email/default/notification/body.html.twig')
-                    ->from($adminEmail)
+                    ->from($senderEmail)
                     ->to($adminEmail)
                     ->context([
-                        'importance' => null,
                         'content' => $data['message'],
                         'footer_text' => 'Website Contact from: '.$data['name'].' <'.$data['email'].'>',
                     ])
