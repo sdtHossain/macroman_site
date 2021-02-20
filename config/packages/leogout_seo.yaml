@@ -1,0 +1,17 @@
+leogout_seo:
+    # By default, the SEO generators services are not loaded if you don't configure them. The following default configuration
+    # loads the services but they won't render anything.
+    # See https://github.com/leogout/SeoBundle#configuration-reference to configure them.
+    # See https://github.com/leogout/SeoBundle#setting-values-dynamically to use them directly in your controller.
+    general:
+        title: Macroman Solutions
+        description: We create digital experience for business that leaves a long lasting positive impression
+        image: http://example.com/image
+    basic:
+        keywords: data analytics, software, saas, market analysis, consultancy, app development, web development
+    og:
+        type: website
+        url: http://example.com
+    twitter:
+        card: summary
+        site: '@marcomanhq'
