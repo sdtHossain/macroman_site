@@ -145,7 +145,7 @@ class BaseController extends AbstractController
                     ->subject($data['subject'])
                     ->htmlTemplate('@email/default/notification/body.html.twig')
                     ->from($senderEmail)
-                    ->to($adminEmail)
+                    ->to(...\explode(',', $adminEmail))
                     ->context([
                         'content' => $data['message'],
                         'footer_text' => 'Website Contact from: '.$data['name'].' <'.$data['email'].'>',
