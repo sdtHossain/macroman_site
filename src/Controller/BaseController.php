@@ -2,14 +2,18 @@
 
 namespace App\Controller;
 
+use App\Entity\ContactUsMessage;
 use App\Form\ContactUsType;
 use App\Repository\JobPostMdRepository;
+use App\Service\SpamChecker;
 use Leogout\Bundle\SeoBundle\Provider\SeoGeneratorProvider;
 use Symfony\Bridge\Twig\Mime\NotificationEmail;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Asset\Packages;
+use Symfony\Component\Form\FormError;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -128,39 +132,58 @@ class BaseController extends AbstractController
     /**
      * @Route("/contact", name="contact")
      */
-    public function contact(Request $request, MailerInterface $mailer, string $adminEmail, string $senderEmail)
+    public function contact(Request $request, MailerInterface $mailer, SpamChecker $spamChecker, string $adminEmail, string $senderEmail)
     {
         $this->setSeo('Contact Us - Macroman Solutions', null);
 
-        $form = $this->createForm(ContactUsType::class);
+        $message = new ContactUsMessage();
+        $response = new Response();
+        $form = $this->createForm(ContactUsType::class, $message);
 
         if ($request->isMethod('POST')) {
             $form->submit($request->request->get($form->getName()));
 
             if ($form->isSubmitted() && $form->isValid()) {
-                $data = $form->getData();
+                $context = [
+                    'user_ip' => $request->getClientIp(),
+                    'user_agent' => $request->headers->get('user-agent'),
+                    'referrer' => $request->headers->get('referer'),
+                    'permalink' => $request->getUri(),
+                ];
 
-                $mailer->send(
-                    (NotificationEmail::asPublicEmail())
-                    ->subject($data['subject'])
-                    ->htmlTemplate('@email/default/notification/body.html.twig')
-                    ->from($senderEmail)
-                    ->to(...\explode(',', $adminEmail))
-                    ->context([
-                        'content' => $data['message'],
-                        'footer_text' => 'Website Contact from: '.$data['name'].' <'.$data['email'].'>',
-                    ])
-                );
+                $message->setSpamScore($spamChecker->getSpamScore($message, $context));
 
-                $this->addFlash('success', 'Message Submitted Successfully');
+                if (2 != $message->getSpamScore()) {
+                    $em = $this->getDoctrine()->getManager();
+                    $em->persist($message);
+                    $em->flush();
+                }
 
-                return $this->redirectToRoute('contact');
+                if (0 == $message->getSpamScore()) {
+                    $mailer->send(
+                        (NotificationEmail::asPublicEmail())
+                        ->subject($message->getSubject())
+                        ->htmlTemplate('@email/default/notification/body.html.twig')
+                        ->from($senderEmail)
+                        ->to(...\explode(',', $adminEmail))
+                        ->context([
+                            'content' => $message->getMessage(),
+                            'footer_text' => 'Website Contact from: '.$message->getName().' <'.$message->getEmail().'>',
+                        ])
+                    );
+
+                    $this->addFlash('success', 'Message Submitted Successfully');
+
+                    return $this->redirectToRoute('contact');
+                }
+                $form->addError(new FormError('Your message has been detected as spam'));
+                $response->setStatusCode(422);
             }
         }
 
         return $this->render('contact.html.twig', [
             'pageTitle' => 'Contact Us',
             'form' => $form->createView(),
-        ]);
+        ], $response);
     }
 }
