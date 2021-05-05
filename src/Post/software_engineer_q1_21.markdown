@@ -4,7 +4,7 @@ jobType: Full Time (Remote)
 jobCategory: Engineer
 vacancy: 2
 publishedAt: 2021-02-20
-openUntil: 2021-03-15
+openUntil: 2021-06-01
 open: true
 applyUrl: https://forms.gle/KvbHimutz3jgQsH8A
 ---
