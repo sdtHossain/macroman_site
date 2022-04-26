@@ -1,40 +1,89 @@
-<footer class="site-footer {% if is_page('home') %}home-footer{% endif %}">
+<footer class="site-footer bg-secondary {% if is_page('home') %}home-footer{% endif %}">
 	<div class="container">
-		<div class="d-md-flex justify-content-between">
-			<div class="footer-left flex-fill">
-				<img {{ img_attrs(asset('build/img/home/logo.png')) }} alt="Macroman Solutions Logo" class="main-logo">
-				<p class="text-gray">We create <strong>digital experience</strong> for business that leaves a long lasting
-					positive impression</p>
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="d-flex align-items-center mb-4">
+					<img {{ img_attrs(asset('build/img/home/logo_white.svg')) }} alt="Macroman Solutions Logo" class="main-logo me-3">
+					<h6 class="text-white fw-bold">Macroman Solution</h6>
+				</div>
+				<p class="mb-4 text-white">Software Solutions, Data Analytics, Machine Learning, Design And Consultancy Company</p>
 			</div>
-			<div class="footer-mid home-footer flex-fill">
-				<h4 class="text-white">Services</h4>
-				<div class="d-flex justify-content-between flex-column flex-lg-row">
-					<ul class="list-unstyled">
-						<li><a href="{{ path('home', {_fragment: 'services'}) }}" class="text-gray font-raleway">Data Analytics</a></li>
-						<li><a href="{{ path('home', {_fragment: 'services'}) }}" class="text-gray font-raleway">Software As A Service</a></li>
-						<li><a href="{{ path('home', {_fragment: 'services'}) }}" class="text-gray font-raleway">Market Analysis</a></li>
-					</ul>
-					<ul class="list-unstyled">
-						<li><a href="{{ path('home', {_fragment: 'services'}) }}" class="text-gray font-raleway">Consultancy</a></li>
-						<li><a href="{{ path('home', {_fragment: 'services'}) }}" class="text-gray font-raleway">App Development</a></li>
-						<li><a href="{{ path('home', {_fragment: 'services'}) }}" class="text-gray font-raleway">Web Development</a></li>
-					</ul>
+			<div class="col-md-4">
+				<h6 class="text-white fw-bold">Service</h6>
+				<div class="row">
+					<div class="col-md-6">
+						<p class="mb-2">
+							<a href="/" class="">Market Analysis</a>
+						</p>
+						<p class="mb-2">
+							<a href="/" class="">Web Development</a>
+						</p>
+						<p class="mb-2">
+							<a href="/" class="">Consultancy</a>
+						</p>
+						<p class="mb-2">
+							<a href="/" class="">Social Media Solution</a>
+						</p>
+					</div>
+
+					<div class="col-md-6">
+						<p class="mb-2">
+							<a href="/" class="">Software Solution</a>
+						</p>
+						<p class="mb-2">
+							<a href="/" class="">Analytical Solution</a>
+						</p>
+						<p class="mb-2">
+							<a href="/" class="">UI/UX Design</a>
+						</p>
+						<p class="mb-2">
+							<a href="/" class="">Mobile Application</a>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="footer-right flex-fill">
-				<h4 class="text-white">Follow Us</h4>
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="https://fb.com/macromanhq" class="text-white"><i class="fab fa-facebook"></i></a></li>
-					<li class="list-inline-item"><a href="https://github.com/macromanhq" class="text-white"><i class="fab fa-github"></i></a></li>
-					<li class="list-inline-item"><a href="https://twitter.com/macromanhq" class="text-white"><i class="fab fa-twitter"></i></a></li>
-					<li class="list-inline-item"><a href="https://linkedin.com/company/macromanhq" class="text-white"><i class="fab fa-linkedin"></i></a></li>
-				</ul>
+
+			<div class="col-md-2">
+				<h6 class="text-white fw-bold">Support</h6>
+				<p class="mb-2">
+					<a href="/" class="">Contact</a>
+				</p>
+				<p class="mb-2">
+					<a href="/" class="">Privacy Policy</a>
+				</p>
+				<p class="mb-2">
+					<a href="/" class="">Terms &amp; Conditions</a>
+				</p>
+				<p class="mb-2">
+					<a href="/" class="">About</a>
+				</p>
+			</div>
+
+      <div class="col-md-2">
+				<h6 class="text-white fw-bold">Resources</h6>
+				<p class="mb-2">
+					<a href="/" class="">Portfolio</a>
+				</p>
+				<p class="mb-2">
+					<a href="/" class="">Team</a>
+				</p>
+				<p class="mb-2">
+					<a href="/" class="">Case Studies</a>
+				</p>
+				<p class="mb-2">
+					<a href="/" class="">Blog</a>
+				</p>
 			</div>
 		</div>
 	</div>
 </footer>
-<div class="copyright bg-primary">
+
+
+<div class="copyright bg-primary py-3">
 	<div class="container">
-		<p class="text-white text-center text-uppercase">Copyright &copy; {{ "now"|date("Y") }} Macroman Solutions</p>
+		<p class="text-white text-center text-uppercase mb-0">Copyright &copy;
+			{{ "now"|date("Y") }}
+			<span class="fw-bolder">Macroman Solutions</span></p>
 	</div>
 </div>

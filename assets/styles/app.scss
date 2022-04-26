@@ -1,0 +1,80 @@
+$primary: #007BFF;
+$secondary: #271530;
+
+$body-color: #736D78;
+
+$font-family-base: 'Nunito Sans', sans-serif;
+
+$headings-font-family: 'Nunito Sans', sans-serif;
+$headings-line-height: 1.5;
+$headings-font-weight: 400;
+$headings-color: $secondary;
+
+$h1-font-size: 6rem; // 96px
+$h2-font-size: 5rem; // 80px
+$h3-font-size: 4rem; // 64px
+$h4-font-size: 3rem; // 48px
+$h5-font-size: 2rem; // 32px
+$h6-font-size: 1.5rem; // 24px
+
+$navbar-light-color: $secondary;
+$navbar-light-brand-color: $secondary !default;
+$navbar-light-active-color: $primary;
+$navbar-light-hover-color:  $primary;
+$navbar-light-active-color: $primary;
+$navbar-nav-link-padding-x: 18px;
+$navbar-brand-padding-y: 16px;
+
+$blockquote-font-size: 24px;
+
+$btn-padding-y: 12px;
+$btn-padding-x: 24px;
+
+// $table-head-color: #FFFFFF;
+// $table-head-bg: #FF9300;
+// $table-accent-bg: #FFF4E5;
+// $table-cell-padding: 1.75rem;
+
+// $input-bg: #FBFBFB;
+// $input-border-width: 2px;
+// $input-border-color: rgba(0, 0, 0, 0.25);
+// $input-border-radius: 10px;
+// $input-height: 80px;
+
+// $list-inline-padding: 1.3rem;
+
+// $mark-bg: #FFF4E5;
+// $mark-padding: 0.773em 0.2em;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+) !default;
+
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1440px
+) !default;
+
+
+$theme-colors: (
+  "primary"  : $primary,
+  "secondary": $secondary,
+  "gray"     : #CDCDCD,
+  "black"    : #2A2A2A
+  );
+
+
+@import "~bootstrap/scss/bootstrap";
+@import "component/style.scss";

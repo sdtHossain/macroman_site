@@ -14,7 +14,7 @@ Encore
     // Referencing Image files from a Template
     // https://symfony.com/doc/current/frontend/encore/copy-files.html
     .copyFiles({
-        from: './assets/macromanhq-html/assets/img',
+        from: './assets/img',
 
         to: Encore.isProduction() ? 'img/[path][hash].[ext]': 'img/[path][name].[ext]',
 
