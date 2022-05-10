@@ -1,0 +1,408 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<!-- Banner -->
+	<div class="container about-banner pb-64">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 text-center">
+				<h3 class="section-title mb-3">Macroman
+					<span class="text-primary">Builds</span>
+					Your Tomorrow</h3>
+				<h6 class="mb-4">Macroman Solutions is an all-encompassing IT agency that builds resilient and adaptable solutions for you.</h6>
+				<a href="" class="btn btn-primary text-white">Let’s start planning together</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- mission & vission -->
+	<div class="container mb-64">
+		<div class="row mb-64">
+			<div class="col-md-3">
+				<div class="pt-136">
+					<h6 class="text-primary">Who Are We</h6>
+					<p>
+						We are a talented bunch of engineers with over 10 years of experience working in IT.<br/>
+						Macroman Solution is based in the developing nation of Bangladesh
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<img {{ img_attrs(asset('build/img/about/bubble.svg')) }} class="img-fluid" alt="images here">
+			</div>
+			<div class="col-md-3">
+				<div class="mb-3 pt-136">
+					<h6 class="text-primary">Our Mission</h6>
+					<p>
+						Our mission to our clients is to deliver adaptable and resilient solutions that can grow along with their business. No matter the size of the organization, we have the solution for everyone
+					</p>
+				</div>
+				<div>
+					<h6 class="text-primary">Our Vission</h6>
+					<p>
+						As an ever-growing agency, we can get a footprint in all the developing nations of the world. We want to show the everyone that powerhouse of IT solution is in Bangladesh. It is the next destination for all IT solutions in the global marketplace
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-group mission-card">
+			<div class="card border-0 bg-secondary text-white">
+				<div class="card-body px-5">
+					<h4 class="card-title text-white mb-0">03+</h4>
+					<p class="card-text">Years Experience</p>
+				</div>
+			</div>
+			<div class="card border-0 bg-secondary text-white">
+				<div class="card-body px-5">
+					<h4 class="card-title text-white mb-0">98%</h4>
+					<p class="card-text">Client Satisfaction</p>
+				</div>
+			</div>
+			<div class="card border-0 bg-secondary text-white">
+				<div class="card-body px-5">
+					<h4 class="card-title text-white mb-0">100+</h4>
+					<p class="card-text">Client Worldwide</p>
+				</div>
+			</div>
+			<div class="card border-0 bg-secondary text-white">
+				<div class="card-body px-5">
+					<h4 class="card-title text-white mb-0">2.5X</h4>
+					<p class="card-text">Groth Rate</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- How we build solution -->
+	<div class="build-solution">
+		<div class="container">
+			<h3 class="section-title mb-3">
+				<span class="text-primary">How We Build</span>
+				Solutions<br/>Here at Macroman</h3>
+			<div class="row mb-64">
+				<div class="col-md-6">
+					<p>Macroman Solution have 100+ satisfied clients now which make us very superior from another IT company in Bangladesh. From the very beginning our company also deals with foreign clients as we have another branch in USA.</p>
+				</div>
+			</div>
+
+			<!-- arrow background image -->
+			<div class="arrow-img">
+				<img {{ img_attrs(asset('build/img/about/arrow-img.png')) }} class="img-fluid" alt="images here">
+			</div>
+			<div class="card-wrapper d-flex flex-wrap justify-content-between">
+				<div class="card p-4">
+					<h6>Consulting</h6>
+					<p class="mb-0">We consult the client regarding their requirement and assess the project. Our team here are great listeners, getting the big picture and the tiniest of details before we start our process</p>
+				</div>
+
+				<div class="card p-4">
+					<h6>analysis</h6>
+					<p class="mb-0">We get all the data from our clients and start our analysis in the backend. We build the timeline and start our process.</p>
+				</div>
+
+				<div class="card p-4">
+					<h6>UI/UX Design</h6>
+					<p class="mb-0">Ergonomic and User-Friendly is our approach when it comes to UI/UX. We design according to the global standards keeping in mind the client’s insight.
+					</p>
+				</div>
+
+				<div class="card p-4">
+					<h6>Delivery</h6>
+					<p class="mb-0">We deliver the final product to our clients, bringing their vision into reality. We take regular feedback from our clients; so that the solution adapts according to their expectations</p>
+				</div>
+
+				<div class="card p-4">
+					<h6>Testing</h6>
+					<p class="mb-0">We test all elements of our solution for you, this is to eliminate any issues that were missed in the development stage</p>
+				</div>
+
+				<div class="card p-4">
+					<h6>Development</h6>
+					<p class="mb-0">We start our back-end development at this stage, meticulousness is our top priority. Our coders get to work keeping the client’s vision in mind</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Technology we use -->
+	<div class="technology-we-use py-64">
+		<div class="container">
+			<h3 class="section-title mb-5 text-center">The Technology
+				<span class="text-primary">We<br/>Use for Your Service</span>
+			</h3>
+
+			<div class="row">
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_php.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Php</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_phython.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Phython</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_go.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Go</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_symfony.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Symfony</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_django.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">dJango</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_vue.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Vue</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_angular.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Angular</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_nodejs.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">NodeJs</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_ionic.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Ionic</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_tailwind.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Tailwind</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_bootstrap.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Bootstrap</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_flutter.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Flutter</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_sass.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Sass</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_webpack.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Webpack</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_nuxt.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Nuxt</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_docker.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Docker</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_kubernetes.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Kubernetes</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_grafana.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Grafana</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_nagiOS.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">NagiOS</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_linux.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">LInux</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_fedora.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">Fedora</h6>
+					</div>
+				</div>
+
+				<div class="col-xxl-2 col-lg-3">
+					<div class="d-flex icon-box bg-white align-items-center mb-4">
+						<img {{ img_attrs(asset('build/img/about/icon_influxDB.png')) }} class="me-2" alt="logos here">
+						<h6 class="mb-0">InfluxDB</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Our Clients -->
+	<div class="our-clients about">
+		<div class="container">
+			
+			<div class="content-wrapper bg-secondary py-64">
+				<div class="spring-imgs">
+					<img {{ img_attrs(asset('build/img/about/icon_spring.png')) }} class="left" alt="images here">
+					<img {{ img_attrs(asset('build/img/about/icon_spring.png')) }} class="right" alt="images here">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-7 text-center">
+						<h4 class="text-white mb-4 fw-bold">Trusted by Over 60+ Companies</h4>
+
+						<ul class="list-inline logos mb-4">
+							<li class="list-inline-item">
+								<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_shopify.svg')) }} class="img-fluid" alt="images here"></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_swiftkey.svg')) }} class="img-fluid" alt="images here"></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_embraer.svg')) }} class="img-fluid" alt="images here"></a>
+							</li>
+						</ul>
+
+						<ul class="list-inline logos">
+							<li class="list-inline-item">
+								<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_airbnb.svg')) }} class="img-fluid" alt="images here"></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_sprint.svg')) }} class="img-fluid" alt="images here"></a>
+							</li>
+							<li class="list-inline-item">
+								<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_vuforia.svg')) }} class="img-fluid" alt="images here"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <!-- praises -->
+	<div class="what-clients-saying">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 pt-5">
+					<h3 class="section-title">See What
+						<strong class="text-primary">Clients</strong>
+						Are Saying</h3>
+					<p class="mb-5">You are one step away to bring your dream ideas to reality. We are here to help you to build software.</p>
+					<a href="/" class="btn btn-outline-secondary">See More
+						<i class="fas fa-chevron-right ms-3"></i>
+					</a>
+				</div>
+				<div class="col-md-6">
+
+
+					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img {{ img_attrs(asset('build/img/home/client_img_1.svg')) }} class="img-fluid" alt="images here"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><img {{ img_attrs(asset('build/img/home/client_img_2.svg')) }} class="img-fluid" alt="images here"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><img {{ img_attrs(asset('build/img/home/client_img_3.svg')) }} class="img-fluid" alt="images here"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="card text-center border-0 rounded-3">
+									<div class="avatar mb-2">
+										<img {{ img_attrs(asset('build/img/home/client_img_1.svg')) }} class="img-fluid" alt="images here">
+									</div>
+									<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+									<p><small class="text-uppercase">CEO / Founder</small></p>
+									<blockquote class="blockquote mb-0">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+									</blockquote>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="card text-center border-0 rounded-3">
+									<div class="avatar mb-2">
+										<img {{ img_attrs(asset('build/img/home/client_img_2.svg')) }} class="img-fluid" alt="images here">
+									</div>
+									<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+									<p><small class="text-uppercase">CEO / Founder</small></p>
+									<blockquote class="blockquote mb-0">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+									</blockquote>
+								</div>
+							</div>
+
+              <div class="carousel-item">
+								<div class="card text-center border-0 rounded-3">
+									<div class="avatar mb-2">
+										<img {{ img_attrs(asset('build/img/home/client_img_3.svg')) }} class="img-fluid" alt="images here">
+									</div>
+									<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+									<p><small class="text-uppercase">CEO / Founder</small></p>
+									<blockquote class="blockquote mb-0">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

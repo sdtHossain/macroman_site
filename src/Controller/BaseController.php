@@ -81,6 +81,17 @@ class BaseController extends AbstractController
     }
 
     /**
+     * @Route("/about", name="about")
+     */
+    public function about(Request $request)
+    {
+        $this->setSeo(null, null);
+
+        return $this->render('about.html.twig', [
+        ]);
+    }
+
+    /**
      * @Route("/apply/{slug}", name="job_apply")
      */
     public function jobApply(Request $request, JobPostMdRepository $mdRepo, $slug)

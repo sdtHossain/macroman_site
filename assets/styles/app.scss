@@ -54,7 +54,6 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-  xxxl: 1600px,
 ) !default;
 
 
@@ -64,15 +63,15 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px,
-  xxxl: 1440px
 ) !default;
 
 
 $theme-colors: (
-  "primary"  : $primary,
-  "secondary": $secondary,
-  "gray"     : #CDCDCD,
-  "black"    : #2A2A2A
+  "primary"      : $primary,
+  "secondary"    : $secondary,
+  "complementary": #e1e5ee,
+  "gray"         : #CDCDCD,
+  "black"        : #2A2A2A
   );
 
 
