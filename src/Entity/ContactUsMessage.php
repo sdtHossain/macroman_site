@@ -20,7 +20,12 @@ class ContactUsMessage
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $name;
+    private $fname;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lname;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -30,7 +35,7 @@ class ContactUsMessage
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $subject;
+    private $website;
 
     /**
      * @ORM\Column(type="text")
@@ -54,12 +59,29 @@ class ContactUsMessage
 
     public function getName(): ?string
     {
-        return $this->name;
+        return $this->fname .' '. $this->lname;
     }
 
-    public function setName(string $name): self
+    public function getfName(): ?string
     {
-        $this->name = $name;
+        return $this->fname;
+    }
+
+    public function setfName(string $name): self
+    {
+        $this->fname = $name;
+
+        return $this;
+    }
+
+    public function getlName(): ?string
+    {
+        return $this->lname;
+    }
+
+    public function setlName(string $name): self
+    {
+        $this->lname = $name;
 
         return $this;
     }
@@ -76,14 +98,14 @@ class ContactUsMessage
         return $this;
     }
 
-    public function getSubject(): ?string
+    public function getWebsite(): ?string
     {
-        return $this->subject;
+        return $this->website;
     }
 
-    public function setSubject(string $subject): self
+    public function setWebsite(string $website): self
     {
-        $this->subject = $subject;
+        $this->website = $website;
 
         return $this;
     }

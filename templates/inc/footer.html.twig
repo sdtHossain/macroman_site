@@ -1,4 +1,4 @@
-<footer class="site-footer bg-secondary {% if is_page('home') %}home-footer{% endif %}">
+<footer class="site-footer bg-secondary mt-64 {% if is_page('home') %}home-footer{% endif %}">
 	<div class="container">
 
 		<div class="row">
@@ -8,6 +8,23 @@
 					<h6 class="text-white fw-bold">Macroman Solution</h6>
 				</div>
 				<p class="mb-4 text-white">Software Solutions, Data Analytics, Machine Learning, Design And Consultancy Company</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href=""><img {{ img_attrs(asset('build/img/common/fb.png')) }} class="" alt="icon here"></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><img {{ img_attrs(asset('build/img/common/tw.png')) }} class="" alt="icon here"></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><img {{ img_attrs(asset('build/img/common/discord.png')) }} class="" alt="icon here"></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><img {{ img_attrs(asset('build/img/common/linkedIn.png')) }} class="" alt="icon here"></a>
+					</li>
+					<li class="list-inline-item">
+						<a href=""><img {{ img_attrs(asset('build/img/common/youtube.png')) }} class="" alt="icon here"></a>
+					</li>
+				</ul>
 			</div>
 			<div class="col-md-4">
 				<h6 class="text-white fw-bold">Service</h6>
@@ -60,7 +77,7 @@
 				</p>
 			</div>
 
-      <div class="col-md-2">
+			<div class="col-md-2">
 				<h6 class="text-white fw-bold">Resources</h6>
 				<p class="mb-2">
 					<a href="/" class="">Portfolio</a>
@@ -84,6 +101,7 @@
 	<div class="container">
 		<p class="text-white text-center text-uppercase mb-0">Copyright &copy;
 			{{ "now"|date("Y") }}
-			<span class="fw-bolder">Macroman Solutions</span></p>
+			<span class="fw-bolder">Macroman Solutions</span>
+		</p>
 	</div>
 </div>

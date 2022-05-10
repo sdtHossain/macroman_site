@@ -30,6 +30,9 @@ $blockquote-font-size: 24px;
 $btn-padding-y: 12px;
 $btn-padding-x: 24px;
 
+$input-padding-x: 1rem;
+$input-padding-y: 1rem;
+
 // $table-head-color: #FFFFFF;
 // $table-head-bg: #FF9300;
 // $table-accent-bg: #FFF4E5;
@@ -66,13 +69,13 @@ $container-max-widths: (
 ) !default;
 
 
-$theme-colors: (
-  "primary"      : $primary,
-  "secondary"    : $secondary,
-  "complementary": #e1e5ee,
-  "gray"         : #CDCDCD,
-  "black"        : #2A2A2A
-  );
+// $theme-colors: (
+//   "primary"      : $primary,
+//   "secondary"    : $secondary,
+//   "complementary": #e1e5ee,
+//   "gray"         : #CDCDCD,
+//   "black"        : #2A2A2A
+//   );
 
 
 @import "~bootstrap/scss/bootstrap";

@@ -8,6 +8,14 @@ body {
   background-size: cover;
 }
 
+textarea {
+  resize: none;
+}
+
+.p-64 {
+  padding: 64px;
+}
+
 .py-64 {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -15,6 +23,10 @@ body {
 
 .pb-64 {
   padding-bottom: 64px;
+}
+
+.mt-64 {
+  margin-top: 64px;
 }
 
 .mb-64 {
@@ -27,6 +39,14 @@ body {
 
 .bg-opacity-5 {
   --bs-bg-opacity: 0.05;
+}
+
+.rounded-15 {
+  border-radius: 15px;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 .section-title {
@@ -153,7 +173,7 @@ body {
 }
 
 .what-clients-saying {
-  padding-bottom: 168px;
+  padding-bottom: 104px;
 
   .carousel-indicators [data-bs-target] {
     text-indent: 0;
@@ -316,4 +336,30 @@ body {
     }
   }
 
+}
+
+
+
+// Contact Page
+.contact-info {
+  overflow: hidden;
+}
+
+.form-wrap {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 88%;
+    height: 10px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $secondary;
+    opacity: 0.4;
+    filter: blur(25px);
+    border-radius: 28px;
+    z-index: -1;
+  }
 }

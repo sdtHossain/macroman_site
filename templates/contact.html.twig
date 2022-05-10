@@ -16,53 +16,109 @@
 
 <!-- Contact Us Form -->
 <div class="contact-form">
-	<div class="container">
-		<h2 class="text-center">Drop us a line</h2>
-		<div class="form-wrap bg-white">
-			{% for type, messages in app.flashes %}
-			{% for message in messages %}
-			<div class="alert alert-{{type}}">
-				{{ message }}
-			</div>
-			{% endfor %}
-			{% endfor %}
-			{{ form(form) }}
-		</div>
-	</div>
-</div>
-<!-- Get in touch -->
-<div class="get-in-touch">
-	<div class="container">
-		<h2 class="text-center">Get in <span class="text-primary">Touch</span></h2>
-		<div class="d-lg-flex justify-content-around">
-			<div class="d-flex location">
-				<div class="icons">
-					<i class="fas fa-map-marker-alt text-primary"></i>
-				</div>
-				<div>
-					<h3 class="text-primary mb-0">Location:</h3>
-					<a class="font-weight-semi-bold text-uppercase" href="https://goo.gl/maps/csiLaEKB96DFnZD88" target="_blank">H #102, Ward No 25, Talaimari<br>Rajshahi, Bangladesh</a>
-				</div>
-			</div>
-			<div class="d-flex email">
-				<div class="icons">
-					<i class="fas fa-paper-plane text-primary"></i>
-				</div>
-				<div>
-					<h3 class="text-primary mb-0">Email:</h3>
-					<a class="font-weight-semi-bold text-uppercase" href="mailto:hello@macromanhq.com">hello@macromanhq.com</a>
-				</div>
-			</div>
-			<div class="d-flex call">
-				<div class="icons">
-					<i class="fas fa-mobile-alt text-primary"></i>
-				</div>
-				<div>
-					<h3 class="text-primary mb-0">Call Us:</h3>
-					<a class="font-weight-semi-bold text-uppercase" href="tel:+8801796048450">+880 1796 048450</a>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <h3 class="py-64">Contact Us</h3>
+    <div class="row mb-64">
+      <div class="col-md-6">
+        <div class="form-wrap rounded-15 bg-white p-64">
+          {% for type, messages in app.flashes %}
+          {% for message in messages %}
+          <div class="alert alert-{{type}}">
+            {{ message }}
+          </div>
+          {% endfor %}
+          {% endfor %}
+          
+
+          <h6>Send Us a Message</h6>
+          {{ form_start(form) }}
+          <div class="form-errors">
+            {{ form_errors(form) }}
+          </div>
+
+          <div class="row mb-4">
+            <div class="col">
+              {{ form_widget(form.fname) }}
+            </div>
+            <div class="col">
+              {{ form_widget(form.lname) }}
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col">
+              {{ form_widget(form.email) }}
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col">
+              {{ form_widget(form.website) }}
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col">
+              {{ form_widget(form.message) }}
+            </div>
+          </div>
+          {{ form_end(form) }}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4 class="section-title mb-4 fw-bold">Contact Info</h4>
+        <div class="contact-info rounded-15">
+          <div class="top bg-primary py-5 px-4">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-white mb-0">Give us a call</p>
+                <h6 class="text-white mb-0">+880 1796 048 450</h6>
+              </div>
+              <div class="col-md-6">
+                <p class="text-white mb-0">Reach us via email</p>
+                <h6 class="text-white mb-0">hello@macroman.com</h6>
+              </div>
+            </div>
+          </div>
+          <div class="bottom bg-secondary py-5 px-4">
+            <p class="mb-0 text-white">Follow us on</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/fb.png')) }} class=""
+                    alt="icon here"></a></li>
+              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/tw.png')) }} class=""
+                    alt="icon here"></a></li>
+              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/discord.png')) }}
+                    class="" alt="icon here"></a></li>
+              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/linkedIn.png')) }}
+                    class="" alt="icon here"></a></li>
+              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/youtube.png')) }}
+                    class="" alt="icon here"></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="px-4 py-5 bg-primary rounded-15 mb-4">
+          <h4 class="text-white mb-4">Bangladesh Location</h4>
+          <p class="text-white">H #102, Ward No 25, Talaimari<br />
+            Rajshahi, Bangladesh</p>
+        </div>
+        <img {{ img_attrs(asset('build/img/contact/bd_map.png')) }} class="img-fluid" alt="">
+      </div>
+
+      <div class="col-md-6">
+        <div class="px-4 py-5 mb-4 bg-primary rounded-15">
+          <h4 class="text-white mb-4">USA Location</h4>
+          <p class="text-white">1021 E Lincolnway unit #229<br />
+            Cheyenne, WY 82001</p>
+        </div>
+        <img {{ img_attrs(asset('build/img/contact/usa_map.png')) }} class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

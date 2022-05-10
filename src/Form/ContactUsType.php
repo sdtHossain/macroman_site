@@ -15,23 +15,47 @@ class ContactUsType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class, [
+            ->add('fname', TextType::class, [
                 'required' => true,
+                'label' => false,
+                'attr'  => [
+                    'placeholder' => 'First Name'
+                ]
             ])
-            ->add('email', EmailType::class)
-            ->add('subject', TextType::class)
+            ->add('lname', TextType::class, [
+                'required' => true,
+                'label' => false,
+                'attr'  => [
+                    'placeholder' => 'Last Name'
+                ]
+            ])
+            ->add('email', EmailType::class, [
+                'label' => false,
+                'attr'  => [
+                    'placeholder' => 'Email'
+                ]
+            ])
+            ->add('website', TextType::class, [
+                'label' => false,
+                'attr'  => [
+                    'placeholder' => 'Website'
+                ]
+            ])
             ->add('message', TextareaType::class, [
+                'required' => false,
+                'label' => false,
                 'attr' => [
-                    'rows' => 10,
+                    'rows' => 4,
+                    'placeholder' => 'Message'
                 ],
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Submit Message',
+                'label' => 'Contact Now',
                 'row_attr' => [
-                    'class' => 'text-center',
+                    'class' => 'mt-4',
                 ],
                 'attr' => [
-                    'class' => 'btn-primary text-white btn-with-shadow font-weight-bold text-uppercase',
+                    'class' => 'btn-primary text-white fw-600',
                 ],
             ])
         ;
