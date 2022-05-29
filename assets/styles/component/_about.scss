@@ -1,0 +1,116 @@
+// About Page
+.about-banner {
+    margin-top: 40px;
+  
+    .btn {
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .mission-card {
+  
+    .card {
+      border-radius: 15px;
+    }
+  
+    .card:nth-child(3),
+    .card:nth-child(1) {
+      position: relative;
+  
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #E1E5EE, $alpha: 0.05);
+        z-index: 0;
+      }
+  
+      &>.card-body {
+        z-index: 9;
+      }
+    }
+  }
+  
+  .build-solution {
+    .arrow-img {
+      position: relative;
+  
+      img {
+        position: absolute;
+        width: 100%;
+        height: 344px;
+        top: 113px;
+        left: 0;
+      }
+    }
+  
+    .card-wrapper {
+      .card {
+        width: 306px;
+        height: 236px;
+        margin-right: 134px;
+        flex-shrink: 0;
+        margin-bottom: 64px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        border: none;
+  
+        &:nth-child(3n + 3) {
+          margin-right: 110px;
+        }
+      }
+    }
+  }
+  
+  .technology-we-use {
+    background: url('../../img/about/technology_we_use_bg_overlay.png') no-repeat center top;
+    background-size: cover;
+  
+    .icon-box {
+      border-radius: 15px;
+      height: 68px;
+      padding: 10px 16px;
+      position: relative;
+  
+      &:after {
+        content: "";
+        position: absolute;
+        background: #271F30;
+        opacity: 0.03;
+        filter: blur(14px);
+        border-radius: 28px;
+        height: 8px;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -8px;
+        z-index: -1;
+      }
+    }
+  }
+  
+  .our-clients.about {
+    .content-wrapper {
+      border-radius: 15px;
+      position: relative;
+  
+      .spring-imgs {
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+  
+          &.left {
+            left: -60px;
+          }
+  
+          &.right {
+            right: -60px;
+            transform: translateY(-50%) rotate(90deg);
+          }
+        }
+      }
+    }
+  
+  }

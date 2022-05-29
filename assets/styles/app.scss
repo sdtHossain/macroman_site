@@ -79,4 +79,7 @@ $container-max-widths: (
 
 
 @import "~bootstrap/scss/bootstrap";
-@import "component/style.scss";
+@import "component/_global.scss";
+@import "component/_home.scss";
+@import "component/_about.scss";
+@import "component/_contact.scss";

@@ -1,101 +1,3 @@
-body.home {
-  background: url("../../img/home/bg.png") no-repeat center top;
-  background-size: cover;
-}
-
-body {
-  background: url("../../img/common/bg.png") no-repeat center top;
-  background-size: cover;
-  overflow-x: hidden;
-}
-
-textarea {
-  resize: none;
-}
-
-.p-64 {
-  padding: 64px;
-}
-
-.py-64 {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
-.pb-64 {
-  padding-bottom: 64px;
-}
-
-.mt-64 {
-  margin-top: 64px;
-}
-
-.mb-64 {
-  margin-bottom: 64px;
-}
-
-.pt-136 {
-  padding-top: 136px;
-}
-
-.bg-opacity-5 {
-  --bs-bg-opacity: 0.05;
-}
-
-.rounded-15 {
-  border-radius: 15px;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.section-title {
-  line-height: 1.125;
-  margin-bottom: 16px;
-}
-
-.sub-title {
-  font-size: 24px;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler {
-  &[aria-expanded="false"] {
-    .close-icon {
-      display: none;
-    }
-
-    .bars-icon {
-      display: block;
-    }
-  }
-
-  &[aria-expanded="true"] {
-    .close-icon {
-      display: block;
-    }
-
-    .bars-icon {
-      display: none;
-    }
-  }
-}
-
-
-.navbar-light .navbar-nav .nav-link.get-started:hover,
-.navbar-light .navbar-nav .nav-link.get-started:focus {
-  color: #FFFFFF;
-}
-
-
-.site-header {
-  margin-bottom: 64px;
-}
-
 .banner {
   margin-bottom: 64px;
 }
@@ -250,171 +152,9 @@ textarea {
   }
 }
 
-.site-footer {
-  padding-top: 64px;
-  padding-bottom: 64px;
-
-  a {
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-}
-
-
-
-
-
-
-// About Page
-.about-banner {
-  margin-top: 40px;
-
-  .btn {
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  }
-}
-
-.mission-card {
-
-  .card {
-    border-radius: 15px;
-  }
-
-  .card:nth-child(3),
-  .card:nth-child(1) {
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba($color: #E1E5EE, $alpha: 0.05);
-      z-index: 0;
-    }
-
-    &>.card-body {
-      z-index: 9;
-    }
-  }
-}
-
-.build-solution {
-  .arrow-img {
-    position: relative;
-
-    img {
-      position: absolute;
-      width: 100%;
-      height: 344px;
-      top: 113px;
-      left: 0;
-    }
-  }
-
-  .card-wrapper {
-    .card {
-      width: 306px;
-      height: 236px;
-      margin-right: 134px;
-      flex-shrink: 0;
-      margin-bottom: 64px;
-      background: #FFFFFF;
-      border-radius: 15px;
-      border: none;
-
-      &:nth-child(3n + 3) {
-        margin-right: 110px;
-      }
-    }
-  }
-}
-
-.technology-we-use {
-  background: url('../../img/about/technology_we_use_bg_overlay.png') no-repeat center top;
-  background-size: cover;
-
-  .icon-box {
-    border-radius: 15px;
-    height: 68px;
-    padding: 10px 16px;
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      background: #271F30;
-      opacity: 0.03;
-      filter: blur(14px);
-      border-radius: 28px;
-      height: 8px;
-      width: 60%;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -8px;
-      z-index: -1;
-    }
-  }
-}
-
-.our-clients.about {
-  .content-wrapper {
-    border-radius: 15px;
-    position: relative;
-
-    .spring-imgs {
-      img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
-        &.left {
-          left: -60px;
-        }
-
-        &.right {
-          right: -60px;
-          transform: translateY(-50%) rotate(90deg);
-        }
-      }
-    }
-  }
-
-}
-
-
-
-// Contact Page
-.contact-info {
-  overflow: hidden;
-}
-
-.form-wrap {
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 88%;
-    height: 10px;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: $secondary;
-    opacity: 0.4;
-    filter: blur(25px);
-    border-radius: 28px;
-    z-index: -1;
-  }
-}
-
-
-
 
 //Responsive
-
 @media (max-width: 1399px) {
-
   .our-clients {
     .our-clients-wrap {
       padding-left: 40px;
@@ -423,12 +163,7 @@ textarea {
   }
 }
 
-
 @media (max-width: 1199px) {
-  .section-title {
-    font-size: 48px;
-  }
-
   .service {
     .service-card-wrap {
       .col {
@@ -446,10 +181,6 @@ textarea {
 }
 
 @media (max-width: 991px) {
-  .section-title {
-    font-size: 40px;
-  }
-
   .our-clients {
     margin-bottom: 64px;
 
@@ -478,12 +209,6 @@ textarea {
 
   .what-clients-saying {
     padding-bottom: 0;
-  }
-
-  .site-footer {
-    h6 {
-      margin-top: 40px;
-    }
   }
 }
 
@@ -544,26 +269,6 @@ textarea {
 }
 
 @media (max-width: 575px) {
-  .site-header {
-    margin-bottom: 24px;
-  }
-
-  .logo {
-    font-size: 1rem;
-
-    img {
-      width: 30px;
-    }
-  }
-
-  .section-title:not(.our-client-setion-title) {
-    font-size: 26px;
-  }
-
-  .sub-title {
-    font-size: 20px;
-  }
-
   .what-clients-saying {
     .card {
       &:after {
@@ -577,17 +282,10 @@ textarea {
       }
     }
   }
-
-  .copyright {
-    p {
-      font-size: 12px;
-    }
-  }
 }
 
 @media (max-width: 479px) {
   .our-clients {
-
     h3 {
       font-size: 30px;
     }

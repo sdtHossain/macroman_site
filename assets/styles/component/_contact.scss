@@ -1,0 +1,24 @@
+// Contact Page
+.contact-info {
+    overflow: hidden;
+  }
+  
+  .form-wrap {
+    position: relative;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      width: 88%;
+      height: 10px;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: $secondary;
+      opacity: 0.4;
+      filter: blur(25px);
+      border-radius: 28px;
+      z-index: -1;
+    }
+  }
+  
