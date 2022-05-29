@@ -23,6 +23,13 @@ import {
 	faChevronRight
 } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
+import {
+	faBars
+} from "@fortawesome/free-solid-svg-icons/faBars";
+
+import {
+	faTimes
+} from "@fortawesome/free-solid-svg-icons/faTimes";
 
 
 import {
@@ -35,5 +42,7 @@ config.mutateApproach = 'sync';
 library.add(faGem);
 library.add(faChevronRight);
 library.add(faFacebook);
+library.add(faBars);
+library.add(faTimes);
 
 dom.watch();
