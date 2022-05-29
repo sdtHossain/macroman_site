@@ -1,24 +1,77 @@
 // Contact Page
 .contact-info {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+.form-wrap {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 88%;
+    height: 10px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $secondary;
+    opacity: 0.4;
+    filter: blur(25px);
+    border-radius: 28px;
+    z-index: -1;
   }
-  
-  .form-wrap {
-    position: relative;
-  
-    &:after {
-      content: '';
-      position: absolute;
-      width: 88%;
-      height: 10px;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: $secondary;
-      opacity: 0.4;
-      filter: blur(25px);
-      border-radius: 28px;
-      z-index: -1;
+}
+
+// Responsive
+@media (max-width: 1199px) {
+    .contact-form {
+      .form-wrap {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .map {
+        h4 {
+          font-size: 40px;
+        }
+      }
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-form {
+      h3.py-64 {
+        padding-top: 0;
+      }
+
+      .map {
+        img {
+          width: 100%;
+        }
+      }
+    }
+}
+
+@media (max-width: 575px) {
+  .contact-form {
+    h3.py-64 {
+      padding-bottom: 0;
+    }
+
+    .form-wrap {
+      padding: 16px;
+    }
+    .map {
+      h4 {
+        font-size: 26px;
+      }
+    }
+
+    .contact-info {
+      ul {
+        .list-inline-item:not(:last-child) {
+          margin-right: 0;
+        }
+      }
     }
   }
-  
+}
