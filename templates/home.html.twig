@@ -1,319 +1,360 @@
 {% extends "base.html.twig" %}
 {% block body %}
-	<div class="banner">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-6">
-					<h3 class="section-title">
-						We Create
-						<strong class="text-primary">
-							Digital Experience
-						</strong>
-						For
-						<strong class="text-primary">
-							Businesses
-						</strong>
-					</h3>
-					<p>
-						We build software that succeeds. Carefully crafted solution to analyze and optimize business output, making sure every angle is covered.
+<div class="banner">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<h3 class="section-title">
+					Make Your
+					<strong class="text-primary">
+						Business Agile
+					</strong>
+					with Our Leading-Edge
+					<strong class="text-primary">
+						Solutions
+					</strong>
+				</h3>
+				<p class="sub-title">
+					Our data-driven solutions are tailor-made to suit your needs. From our Mobile App to Market Analysis
+					solutions help you reach the epitome of success
+				</p>
+				<a class="btn btn-primary text-white">Begin Your Journey with Macroman</a>
+			</div>
+			<div class="col-md-6">
+				<img {{ img_attrs(asset('build/img/home/banner_right.png')) }} class="img-fluid" alt="images here">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Service -->
+<div class="service">
+	<div class="container">
+		<div class="row row-cols-1 row-cols-md-3 g-4 service-card-wrap" data-masonry='{"percentPosition": true }'>
+			<div class="col">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
+					</div>
+					<h6>Software Solution</h6>
+					<p>We develop scalable software solutions for big and small businesses. No matter your size, our
+						solutions fit like a glove</p>
+				</div>
+			</div>
+
+			<div class="col mt-4 mt-md-5">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
+					</div>
+					<h6>Analytical Solution</h6>
+					<p>Data is everything in today’s business space, we set up world-class analytics solutions for your
+						growing business</p>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
+					</div>
+					<h6>UI / UX Design</h6>
+					<p>We make ergonomic and adaptable UI/UX solutions customized for your business</p>
+				</div>
+			</div>
+
+			<div class="col">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
+					</div>
+					<h6>Mobile Application</h6>
+					<p>Be it on Android or iOS, we develop mobile applications that set you apart from the competitors
 					</p>
-					<a class="btn btn-primary text-white">Let us help you succeed</a>
 				</div>
-				<div class="col-md-6">
-					<img {{ img_attrs(asset('build/img/home/banner_right.png')) }} class="img-fluid" alt="images here"></div>
 			</div>
-		</div>
-	</div>
 
-	<!-- Service -->
-	<div class="service">
-		<div class="container">
-			<div class="row row-cols-1 row-cols-md-3 g-4 service-card-wrap" data-masonry='{"percentPosition": true }'>
-				<div class="col">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Software Solution</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
+			<div class="col mt-4 mt-md-5">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
 					</div>
+					<h6>Market Analysis</h6>
+					<p>We build resilient market analytics solutions to help you expand your business further and
+						understand the market trends early</p>
 				</div>
+			</div>
 
-				<div class="col mt-5">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Analytical Solution</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
+			<div class="col">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
 					</div>
+					<h6>Web Development</h6>
+					<p>We develop scalable web solutions; so that the website can grow alongside your business</p>
 				</div>
+			</div>
 
-				<div class="col">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>UI / UX Design</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
+			<div class="col">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
 					</div>
+					<h6>Consultancy</h6>
+					<p>We provide consultancy solutions for new and existing ventures, helping your mature in the market
+						and flourish</p>
 				</div>
+			</div>
 
-				<div class="col">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Mobile Application</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
+			<div class="col mt-4 mt-md-5">
+				<div class="card text-center">
+					<div class="icon-wrap mx-auto mb-4">
+						<i class="fas fa-gem text-white mb-3"></i>
 					</div>
-				</div>
-
-				<div class="col mt-5">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Market Analysis</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
-					</div>
-				</div>
-
-				<div class="col">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Web Development</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
-					</div>
-				</div>
-
-				<div class="col">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Consultancy</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
-					</div>
-				</div>
-
-				<div class="col mt-5">
-					<div class="card text-center">
-						<div class="icon-wrap mx-auto mb-4">
-							<i class="fas fa-gem text-white mb-3"></i>
-						</div>
-						<h6>Social Media</h6>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper pellentesque ridiculus habitant.</p>
-					</div>
+					<h6>Social Media</h6>
+					<p>We make handling social media easy with our innovative solutions. Say goodbye to your problems,
+						we’ll take care of the rest</p>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Help business -->
-	<div class="help-business">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<img {{ img_attrs(asset('build/img/home/help_business_left_img.png')) }} class="img-fluid" alt="images here">
-				</div>
-				<div class="col-md-6">
-					<h3 class="section-title">We Help Businesses Regardless of
-						<strong class="text-primary">SIZE</strong>
-					</h3>
-					<p>We cater to every business,
-						<span class="text-primary">Small - Medium - Big</span><br/>Enterprise.</p>
+<!-- Help business -->
+<div class="help-business">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<img {{ img_attrs(asset('build/img/home/help_business_left_img.png')) }} class="img-fluid"
+					alt="images here">
+			</div>
+			<div class="col-lg-6 text-center text-md-start">
+				<h3 class="section-title">We Brew Adaptable Solutions; Our Focus Is on Your
+					<strong class="text-primary">Growth</strong>
+				</h3>
+				<p  class="sub-title">We deliver solutions to help elevate your <span class="text-primary">growth</span>. From websites and mobile apps to market analysis
+					and social media, we deliver <span class="text-primary">widespread solutions</span> that suit <span class="text-primary">your needs</span></p>
 
-					<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-						<div class="col">
-							<div class="bg-white text-center py-4 rounded-2 content-box">
-								<h6 class="mb-0">450+</h6>
-								<p class="text-uppercase mb-0">Happy Clients</p>
-							</div>
-						</div>
-
-						<div class="col">
-							<div class="bg-white text-center py-4 rounded-2 content-box">
-								<h6 class="mb-0">450+</h6>
-								<p class="text-uppercase mb-0">Happy Clients</p>
-							</div>
-						</div>
-
-						<div class="col">
-							<div class="bg-white text-center py-4 rounded-2 content-box">
-								<h6 class="mb-0">450+</h6>
-								<p class="text-uppercase mb-0">Happy Clients</p>
-							</div>
+				<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+					<div class="col">
+						<div class="bg-white text-center py-4 rounded-2 content-box h-100">
+							<h6 class="mb-0">130+</h6>
+							<p class="text-uppercase mb-0">Happy Clients</p>
 						</div>
 					</div>
 
-					<a class="btn btn-outline-secondary">More About Us
-						<i class="fas fa-chevron-right ms-3"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!-- Why Choose Us -->
-	<div class="why-choose">
-		<div class="vector-img">
-			<img {{ img_attrs(asset('build/img/home/bubble.png')) }} class="img-fluid" alt="images here">
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 mb-5">
-					<h3 class="section-title">Why You Should Choose
-						<strong class="text-primary">Macroman?</strong>
-					</h3>
-					<p>You are one step away to bring your dream ideas to reality. We are here to help you to build software.</p>
-				</div>
-			</div>
-
-			<div class="row mb-5">
-				<div class="col-md-4">
-					<i class="fas fa-gem text-primary mb-2"></i>
-					<h6>Friendly Interface</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus</p>
-				</div>
-
-				<div class="col-md-4">
-					<i class="fas fa-gem text-primary mb-2"></i>
-					<h6>Quality Product</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus</p>
-				</div>
-
-				<div class="col-md-4">
-					<i class="fas fa-gem text-primary mb-2"></i>
-					<h6>Great Price</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus</p>
-				</div>
-			</div>
-
-			<a href="/" class="btn btn-outline-secondary">Let's Start Planning Togather</a>
-		</div>
-	</div>
-
-	<!-- our work -->
-	<div class="our-work">
-		<div class="container text-center">
-			<h3 class="section-title">Some of Our<br/>
-				<strong class="text-primary">Finest Work</strong>
-				Here</h3>
-			<img {{ img_attrs(asset('build/img/home/finest_work.png')) }} class="img-fluid" alt="images here">
-			<a href="/" class="btn btn-outline-secondary">Discover all Works</a>
-		</div>
-	</div>
-
-	<!-- Our Clients -->
-	<div class="our-clients">
-		<div class="container">
-			<div class="d-flex justify-content-between align-items-center our-clients-wrap bg-secondary">
-				<h3 class="text-white section-title">Our Most Trusted Clients</h3>
-
-				<ul class="list-inline logos">
-					<li class="list-inline-item">
-						<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_shopify.png')) }} class="img-fluid" alt="images here"></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_swiftkey.png')) }} class="img-fluid" alt="images here"></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_embraer.png')) }} class="img-fluid" alt="images here"></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_airbnb.png')) }} class="img-fluid" alt="images here"></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_sprint.png')) }} class="img-fluid" alt="images here"></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="/" class="logo"><img {{ img_attrs(asset('build/img/home/logo_vuforia.png')) }} class="img-fluid" alt="images here"></a>
-					</li>
-				</ul>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- praises -->
-	<div class="what-clients-saying">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 pt-5">
-					<h3 class="section-title">See What
-						<strong class="text-primary">Clients</strong>
-						Are Saying</h3>
-					<p class="mb-5">You are one step away to bring your dream ideas to reality. We are here to help you to build software.</p>
-					<a href="/" class="btn btn-outline-secondary">See More
-						<i class="fas fa-chevron-right ms-3"></i>
-					</a>
-				</div>
-				<div class="col-md-6">
-
-
-					<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img {{ img_attrs(asset('build/img/home/client_img_1.png')) }} class="img-fluid" alt="images here"></button>
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><img {{ img_attrs(asset('build/img/home/client_img_2.png')) }} class="img-fluid" alt="images here"></button>
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><img {{ img_attrs(asset('build/img/home/client_img_3.png')) }} class="img-fluid" alt="images here"></button>
+					<div class="col">
+						<div class="bg-white text-center py-4 rounded-2 content-box h-100">
+							<h6 class="mb-0">200+</h6>
+							<p class="text-uppercase mb-0">Projects Completed</p>
 						</div>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<div class="card text-center border-0 rounded-3">
-									<div class="avatar mb-2">
-										<img {{ img_attrs(asset('build/img/home/client_img_1.png')) }} class="img-fluid" alt="images here">
-									</div>
-									<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
-									<p><small class="text-uppercase">CEO / Founder</small></p>
-									<blockquote class="blockquote mb-0">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
-									</blockquote>
+					</div>
+
+					<div class="col">
+						<div class="bg-white text-center py-4 rounded-2 content-box h-100">
+							<h6 class="mb-0">10+</h6>
+							<p class="text-uppercase mb-0">Ready Solution</p>
+						</div>
+					</div>
+				</div>
+
+				<a class="btn btn-outline-secondary">More About Us
+					<i class="fas fa-chevron-right ms-3"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Why Choose Us -->
+<div class="why-choose">
+	<div class="vector-img">
+		<img {{ img_attrs(asset('build/img/home/bubble.png')) }} class="img-fluid" alt="images here">
+	</div>
+	<div class="container position-relative">
+		<div class="row">
+			<div class="col-md-6 mb-5">
+				<h3 class="section-title">Why You Should Choose
+					<strong class="text-primary">Macroman?</strong>
+				</h3>
+				<p class="sub-title">Macroman thinks about the wider picture and provides you with solutions that best suit your needs.
+					Elevate yourself to the next level by choosing Macroman Solutions!</p>
+			</div>
+		</div>
+
+		<div class="row mb-3 mb-md-5">
+			<div class="col-md-4 mb-4 mb-md-0">
+				<i class="fas fa-gem text-primary mb-2"></i>
+				<h6>Widespread Solutions</h6>
+				<p>We provide widespread solutions that cover all your business needs across various departments</p>
+			</div>
+
+			<div class="col-md-4 mb-4 mb-md-0">
+				<i class="fas fa-gem text-primary mb-2"></i>
+				<h6>Quality & Resilient Support</h6>
+				<p>Our support team works round the clock to provide you with the best solutions as per your requirement
+				</p>
+			</div>
+
+			<div class="col-md-4">
+				<i class="fas fa-gem text-primary mb-2"></i>
+				<h6>Fair Price & Great Value</h6>
+				<p>We provide cost-effective solutions that do not break the bank. We also ensure a great value for your
+					growing business</p>
+			</div>
+		</div>
+
+		<a href="/" class="btn btn-outline-secondary">Let's Start Planning Togather</a>
+	</div>
+</div>
+
+<!-- our work -->
+<div class="our-work">
+	<div class="container text-center">
+		<h3 class="section-title">Some of Our <strong class="text-primary">Inventive<br />Solutions</strong>
+			for Our Clients
+		</h3>
+		<img {{ img_attrs(asset('build/img/home/finest_work.png')) }} class="img-fluid" alt="images here">
+		<a href="/" class="btn btn-outline-secondary">See Our Inventive Works</a>
+	</div>
+</div>
+
+<!-- Our Clients -->
+<div class="our-clients">
+	<div class="container">
+		<div class="d-flex justify-content-between align-items-center our-clients-wrap bg-secondary">
+			<h3 class="text-white section-title our-client-setion-title text-center text-lg-start fw-bold">Our Most Trusted Clients</h3>
+
+			<ul class="list-inline logos text-center text-lg-start">
+				<li class="list-inline-item">
+					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_shopify.png')) }}
+							class="img-fluid" alt="images here"></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_swiftkey.png')) }}
+							class="img-fluid" alt="images here"></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_embraer.png')) }}
+							class="img-fluid" alt="images here"></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_airbnb.png')) }} class="img-fluid"
+							alt="images here"></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_sprint.png')) }} class="img-fluid"
+							alt="images here"></a>
+				</li>
+				<li class="list-inline-item">
+					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_vuforia.png')) }}
+							class="img-fluid" alt="images here"></a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<!-- praises -->
+<div class="what-clients-saying">
+	<div class="container">
+		<div class="row flex-column-reverse flex-lg-row">
+			<div class="col-lg-6 pt-5">
+				<h3 class="section-title">See
+					<strong class="text-primary">Our Clients</strong>
+					Testimonials
+				</h3>
+				<p class="mb-3 mb-lg-5 sub-title">As we worked with some of the most esteemed clients from around the world. These
+					are some testimonials from them about our service and our solutions fit like a glove</p>
+				<a href="/" class="btn btn-outline-secondary">See More
+					<!-- <i class="fas fa-chevron-right ms-3"></i> -->
+					<i class="fas fa-chevron-right"></i>
+				</a>
+			</div>
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false"
+					data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"><img {{
+								img_attrs(asset('build/img/home/client_img_1.png')) }} class="img-fluid"
+								alt="images here"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"><img {{ img_attrs(asset('build/img/home/client_img_2.png')) }}
+								class="img-fluid" alt="images here"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"><img {{ img_attrs(asset('build/img/home/client_img_3.png')) }}
+								class="img-fluid" alt="images here"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card text-center border-0 rounded-3">
+								<div class="avatar mb-2">
+									<img {{ img_attrs(asset('build/img/home/client_img_1.png')) }} class="img-fluid"
+										alt="images here">
 								</div>
-							</div>
-
-							<div class="carousel-item">
-								<div class="card text-center border-0 rounded-3">
-									<div class="avatar mb-2">
-										<img {{ img_attrs(asset('build/img/home/client_img_2.png')) }} class="img-fluid" alt="images here">
-									</div>
-									<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
-									<p><small class="text-uppercase">CEO / Founder</small></p>
-									<blockquote class="blockquote mb-0">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
-									</blockquote>
-								</div>
-							</div>
-
-              <div class="carousel-item">
-								<div class="card text-center border-0 rounded-3">
-									<div class="avatar mb-2">
-										<img {{ img_attrs(asset('build/img/home/client_img_3.png')) }} class="img-fluid" alt="images here">
-									</div>
-									<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
-									<p><small class="text-uppercase">CEO / Founder</small></p>
-									<blockquote class="blockquote mb-0">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
-									</blockquote>
-								</div>
+								<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+								<p>
+									<small class="text-uppercase">CEO / Founder</small>
+								</p>
+								<blockquote class="blockquote mb-0">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac
+									ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+								</blockquote>
 							</div>
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
+
+						<div class="carousel-item">
+							<div class="card text-center border-0 rounded-3">
+								<div class="avatar mb-2">
+									<img {{ img_attrs(asset('build/img/home/client_img_2.png')) }} class="img-fluid"
+										alt="images here">
+								</div>
+								<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+								<p>
+									<small class="text-uppercase">CEO / Founder</small>
+								</p>
+								<blockquote class="blockquote mb-0">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac
+									ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+								</blockquote>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card text-center border-0 rounded-3">
+								<div class="avatar mb-2">
+									<img {{ img_attrs(asset('build/img/home/client_img_3.png')) }} class="img-fluid"
+										alt="images here">
+								</div>
+								<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+								<p>
+									<small class="text-uppercase">CEO / Founder</small>
+								</p>
+								<blockquote class="blockquote mb-0">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac
+									ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+								</blockquote>
+							</div>
+						</div>
 					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
 
 {% endblock %}

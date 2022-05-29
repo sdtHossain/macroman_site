@@ -1,58 +1,58 @@
 <header class="site-header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand font-raleway font-weight-bold" href="/">
-                <img {{ img_attrs(asset('build/img/home/logo.png')) }} class="img-fluid main-logo" alt="Macroman Solutions Logo">
-                    <span class="fw-bold ms-2">
-                        Macroman Solutions
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand font-weight-bold logo" href="/">
+				<img {{ img_attrs(asset('build/img/home/logo.png')) }} class="img-fluid main-logo" alt="Macroman Solutions Logo">
+				<span class="fw-bold ms-2 logo-text">
+					Macroman Solution
+				</span>
+			</a>
+			<button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars bars-icon"></i>
+				<i class="fas fa-times close-icon"></i>
+			</button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item {% if is_page('home') %}active{% endif %}">
-                            <a class="nav-link font-maven-pro" href="/">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item {% if is_page('service', true) %}active{% endif %}">
-                            <a class="nav-link font-maven-pro" href="/service">
-                                Service
-                            </a>
-                        </li>
-                        <li class="nav-item {% if is_page('portfolio') %}active{% endif %}">
-                            <a class="nav-link font-maven-pro pr-0" href="/portfolio">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li class="nav-item {% if is_page('about') %}active{% endif %}">
-                            <a class="nav-link font-maven-pro pr-0" href="/about">
-                                About
-                            </a>
-                        </li>
-                        <li class="nav-item {% if is_page('contact') %}active{% endif %}">
-                            <a class="nav-link font-maven-pro pr-0" href="/contact">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item ms-5 {% if is_page('getstarted') %}active{% endif %}">
-                            <a class="nav-link font-maven-pro pr-0 btn btn-outline-secondary get-started" href="/getstarted">
-                                Get Started
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        {# {% if not is_page('home') %}
-            <div class="container">
-                <h1 class="text-white page-title text-center mb-0">
-                    {{ pageTitle|default('Page Title') }}
-                </h1>
-            </div>
-        {% endif %} #}
-    </header>
-    
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item {% if is_page('home') %}active{% endif %}">
+						<a class="nav-link font-maven-pro" href="/">
+							Home
+						</a>
+					</li>
+					<li class="nav-item {% if is_page('service', true) %}active{% endif %}">
+						<a class="nav-link font-maven-pro" href="/service">
+							Service
+						</a>
+					</li>
+					<li class="nav-item {% if is_page('portfolio') %}active{% endif %}">
+						<a class="nav-link font-maven-pro pr-0" href="/portfolio">
+							Portfolio
+						</a>
+					</li>
+					<li class="nav-item {% if is_page('about') %}active{% endif %}">
+						<a class="nav-link font-maven-pro pr-0" href="/about">
+							About
+						</a>
+					</li>
+					<li class="nav-item {% if is_page('contact') %}active{% endif %}">
+						<a class="nav-link font-maven-pro pr-0" href="/contact">
+							Contact
+						</a>
+					</li>
+					<li class="nav-item ms-lg-5 {% if is_page('getstarted') %}active{% endif %}">
+						<a class="nav-link font-maven-pro pr-0 btn btn-outline-secondary get-started" href="/getstarted">
+							Get Started
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	{# {% if not is_page('home') %}
+		            <div class="container">
+		                <h1 class="text-white page-title text-center mb-0">
+		                    {{ pageTitle|default('Page Title') }}
+		                </h1>
+		            </div>
+		        {% endif %} #}
+</header>
