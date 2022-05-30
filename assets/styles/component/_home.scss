@@ -8,25 +8,19 @@
   .service-card-wrap {
     .col {
       .icon-wrap {
+        background: url('../../img/home/icon_bg.png') no-repeat;
+        background-size: contain;
         width: 138px;
         height: 149px;
         display: flex;
         align-items: center;
         justify-content: center;
+        opacity: 0.4;
+        transition: .3s;
 
         .svg-inline--fa {
           font-size: 48px;
         }
-      }
-
-      &:not(:first-child) .icon-wrap {
-        background: url('../../img/home/icon_bg_blur.png') no-repeat;
-        background-size: contain;
-      }
-
-      &:first-child .icon-wrap {
-        background: url('../../img/home/icon_bg.png') no-repeat;
-        background-size: contain;
       }
 
       .card {
@@ -34,6 +28,12 @@
         border-radius: 15px;
         border: none;
         position: relative;
+
+        &:hover {
+          .icon-wrap {
+            opacity: 1;
+          }
+        }
       }
     }
   }
