@@ -22,6 +22,11 @@ textarea {
   padding-bottom: 64px;
 }
 
+.pt-64 {
+  padding-top: 64px;
+}
+
+
 .pb-64 {
   padding-bottom: 64px;
 }
@@ -89,6 +94,17 @@ textarea {
 .navbar-light .navbar-nav .nav-link.get-started:hover,
 .navbar-light .navbar-nav .nav-link.get-started:focus {
   color: #FFFFFF;
+}
+
+.btn-mcm-outline {
+  color: $secondary;
+  border-color: $secondary;
+
+  &:hover {
+    color: #FFFFFF;
+    border-color: $primary;
+    background: $primary;
+  }
 }
 
 
