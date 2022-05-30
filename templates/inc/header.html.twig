@@ -1,6 +1,6 @@
 <header class="site-header">
 	<nav class="navbar navbar-expand-lg navbar-light">
-		<div class="container">
+		<div class="container position-relative">
 			<a class="navbar-brand font-weight-bold logo" href="/">
 				<img {{ img_attrs(asset('build/img/home/logo.png')) }} class="img-fluid main-logo" alt="Macroman Solutions Logo">
 				<span class="fw-bold ms-2 logo-text">
@@ -15,32 +15,96 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item {% if is_page('home') %}active{% endif %}">
-						<a class="nav-link font-maven-pro" href="/">
+						<a class="nav-link " href="/">
 							Home
 						</a>
 					</li>
-					<li class="nav-item {% if is_page('service', true) %}active{% endif %}">
-						<a class="nav-link font-maven-pro" href="/service">
-							Service
+
+
+					<li class="nav-item dropdown position-static {% if is_page('service', true) %}active{% endif %}">
+						<a class="nav-link dropdown-toggle" href="/service" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
 						</a>
+						<div class="dropdown-menu service-dropdown w-100 p-0 border-0 bg-transparent" aria-labelledby="navbarDropdown">
+							<div class="row">
+
+
+								<div class="col-lg-3 d-none d-lg-inline">
+									<div class="bg-secondary py-64 px-3 h-100">
+										<h6 class="fw-normal text-white mega-menu-left-title">We’re Changing The Way People Think of UI/UX Creation.</h6>
+										<p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper</p>
+										<a class="btn btn-primary text-white" href="#">View Portfolio</a>
+									</div>
+								</div>
+								<div class="col-lg-3 pt-64 pb-lg-3">
+									<div class="">
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block d-none d-lg-block mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-3 pt-64 pb-lg-3">
+									<div class="">
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block d-none d-lg-block mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-3 pt-64 pb-lg-3">
+									<div class="">
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block d-none d-lg-block mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+										<a class="text-decoration-none" href="#">
+											<h6 class="text-secondary mb-0">Software Solution</h6>
+											<p class="excerpt d-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit Diam netus sit</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</li>
+
 					<li class="nav-item {% if is_page('portfolio') %}active{% endif %}">
-						<a class="nav-link font-maven-pro pr-0" href="/portfolio">
+						<a class="nav-link  pr-0" href="/portfolio">
 							Portfolio
 						</a>
 					</li>
 					<li class="nav-item {% if is_page('about') %}active{% endif %}">
-						<a class="nav-link font-maven-pro pr-0" href="/about">
+						<a class="nav-link  pr-0" href="/about">
 							About
 						</a>
 					</li>
 					<li class="nav-item {% if is_page('contact') %}active{% endif %}">
-						<a class="nav-link font-maven-pro pr-0" href="/contact">
+						<a class="nav-link  pr-0" href="/contact">
 							Contact
 						</a>
 					</li>
 					<li class="nav-item ms-lg-5 {% if is_page('getstarted') %}active{% endif %}">
-						<a class="nav-link font-maven-pro pr-0 btn btn-outline-secondary get-started" href="/getstarted">
+						<a class="nav-link  pr-0 btn btn-mcm-outline get-started" href="/getstarted">
 							Get Started
 						</a>
 					</li>
@@ -48,11 +112,4 @@
 			</div>
 		</div>
 	</nav>
-	{# {% if not is_page('home') %}
-		            <div class="container">
-		                <h1 class="text-white page-title text-center mb-0">
-		                    {{ pageTitle|default('Page Title') }}
-		                </h1>
-		            </div>
-		        {% endif %} #}
 </header>
