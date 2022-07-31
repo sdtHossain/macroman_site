@@ -3,122 +3,133 @@
 {% use 'bootstrap_4_layout.html.twig' with form_label as base_form_label %}
 
 {% block form_label %}
-{{ block('base_form_label') }}
+	{{ block('base_form_label') }}
 
-{% if required %}
-<span class="text-danger" title="This field is required">*</span>
-{% endif %}
+	{% if required %}
+		<span class="text-danger" title="This field is required">*</span>
+	{% endif %}
 {% endblock %}
 
 {% form_theme form _self %}
 
 {% block body %}
 
-<!-- Contact Us Form -->
-<div class="contact-form">
-  <div class="container">
-    <h3 class="py-64">Contact Us</h3>
-    <div class="row mb-64">
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <div class="form-wrap rounded-15 bg-white p-64">
-          {% for type, messages in app.flashes %}
-          {% for message in messages %}
-          <div class="alert alert-{{type}}">
-            {{ message }}
-          </div>
-          {% endfor %}
-          {% endfor %}
-          
+	<!-- Contact Us Form -->
+	<div class="contact-form">
+		<div class="container">
+			<h3 class="py-64">Contact Us</h3>
+			<div class="row mb-64">
+				<div class="col-lg-6 mb-5 mb-lg-0">
+					<div class="form-wrap rounded-15 bg-white p-64">
+						{% for type, messages in app.flashes %}
+							{% for message in messages %}
+								<div class="alert alert-{{type}}">
+									{{ message }}
+								</div>
+							{% endfor %}
+						{% endfor %}
 
-          <h6>Send Us a Message</h6>
-          {{ form_start(form) }}
-          <div class="form-errors">
-            {{ form_errors(form) }}
-          </div>
 
-          <div class="row mb-4">
-            <div class="col-xxl-6 mb-4 mb-xxl-0">
-              {{ form_widget(form.fname) }}
-            </div>
-            <div class="col-xxl-6">
-              {{ form_widget(form.lname) }}
-            </div>
-          </div>
+						<h6>Send Us a Message</h6>
+						{{ form_start(form) }}
+						<div class="form-errors">
+							{{ form_errors(form) }}
+						</div>
 
-          <div class="row mb-4">
-            <div class="col">
-              {{ form_widget(form.email) }}
-            </div>
-          </div>
+						<div class="row mb-4">
+							<div class="col-xxl-6 mb-4 mb-xxl-0">
+								{{ form_widget(form.fname) }}
+							</div>
+							<div class="col-xxl-6">
+								{{ form_widget(form.lname) }}
+							</div>
+						</div>
 
-          <div class="row mb-4">
-            <div class="col">
-              {{ form_widget(form.website) }}
-            </div>
-          </div>
+						<div class="row mb-4">
+							<div class="col">
+								{{ form_widget(form.email) }}
+							</div>
+						</div>
 
-          <div class="row mb-4">
-            <div class="col">
-              {{ form_widget(form.message) }}
-            </div>
-          </div>
-          {{ form_end(form) }}
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <h4 class="section-title mb-4 fw-bold">Contact Info</h4>
-        <div class="contact-info rounded-15">
-          <div class="top bg-primary px-3 px-sm-4 py-3 py-sm-5">
-            <div class="row">
-              <div class="col-xxl-6 mb-3 mb-xxl-0">
-                <p class="text-white mb-0">Give us a call</p>
-                <h6 class="text-white mb-0">+880 1796 048 450</h6>
-              </div>
-              <div class="col-xxl-6">
-                <p class="text-white mb-0">Reach us via email</p>
-                <h6 class="text-white mb-0">hello@macroman.com</h6>
-              </div>
-            </div>
-          </div>
-          <div class="bottom bg-secondary px-3 px-sm-4 py-3 py-sm-5">
-            <p class="mb-0 text-white">Follow us on</p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/fb.png')) }} class=""
-                    alt="icon here"></a></li>
-              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/tw.png')) }} class=""
-                    alt="icon here"></a></li>
-              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/discord.png')) }}
-                    class="" alt="icon here"></a></li>
-              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/linkedIn.png')) }}
-                    class="" alt="icon here"></a></li>
-              <li class="list-inline-item"><a href=""><img {{ img_attrs(asset('build/img/common/youtube.png')) }}
-                    class="" alt="icon here"></a></li>
-            </ul>
-          </div>
-        </div>
+						<div class="row mb-4">
+							<div class="col">
+								{{ form_widget(form.website) }}
+							</div>
+						</div>
 
-      </div>
-    </div>
+						<div class="row mb-4">
+							<div class="col">
+								{{ form_widget(form.message) }}
+							</div>
+						</div>
+						{{ form_end(form) }}
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<h4 class="section-title mb-4 fw-bold">Contact Info</h4>
+					<div class="contact-info rounded-15">
+						<div class="top bg-primary px-3 px-sm-4 py-3 py-sm-5">
+							<div class="row">
+								<div class="col-xxl-6 mb-3 mb-xxl-0">
+									<p class="text-white mb-0">Give us a call</p>
+									<h6 class="text-white mb-0">+880 1796 048 450</h6>
+								</div>
+								<div class="col-xxl-6">
+									<p class="text-white mb-0">Reach us via email</p>
+									<h6 class="text-white mb-0">hello@macroman.com</h6>
+								</div>
+							</div>
+						</div>
+						<div class="bottom bg-secondary px-3 px-sm-4 py-3 py-sm-5">
+							<p class="mb-0 text-white">Follow us on</p>
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a href=""><img {{ img_attrs(asset('build/img/common/fb.png')) }} class="" alt="icon here"></a>
+								</li>
+								<li class="list-inline-item">
+									<a href=""><img {{ img_attrs(asset('build/img/common/tw.png')) }} class="" alt="icon here"></a>
+								</li>
+								<li class="list-inline-item">
+									<a href=""><img {{ img_attrs(asset('build/img/common/discord.png')) }} class="" alt="icon here"></a>
+								</li>
+								<li class="list-inline-item">
+									<a href=""><img {{ img_attrs(asset('build/img/common/linkedIn.png')) }} class="" alt="icon here"></a>
+								</li>
+								<li class="list-inline-item">
+									<a href=""><img {{ img_attrs(asset('build/img/common/youtube.png')) }} class="" alt="icon here"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-    <div class="row map">
-      <div class="col-lg-6 mb-5 mb-lg-0">
-        <div class="px-3 px-sm-4 py-3 py-sm-5 bg-primary rounded-15 mb-4">
-          <h4 class="text-white mb-2 mb-sm-3 mb-xl-4">Bangladesh Location</h4>
-          <p class="text-white">H #102, Ward No 25, Talaimari<br />
-            Rajshahi, Bangladesh</p>
-        </div>
-        <img {{ img_attrs(asset('build/img/contact/bd_map.png')) }} class="img-fluid" alt="">
-      </div>
+				</div>
+			</div>
 
-      <div class="col-lg-6">
-        <div class="px-3 px-sm-4 py-3 py-sm-5 mb-4 bg-primary rounded-15">
-          <h4 class="text-white mb-2 mb-sm-3 mb-xl-4">USA Location</h4>
-          <p class="text-white">1021 E Lincolnway unit #229<br />
-            Cheyenne, WY 82001</p>
-        </div>
-        <img {{ img_attrs(asset('build/img/contact/usa_map.png')) }} class="img-fluid" alt="">
-      </div>
-    </div>
-  </div>
-</div>
+			<div class="row map">
+				<div class="col-lg-6 mb-5 mb-lg-0">
+					<div class="px-3 px-sm-4 py-3 py-sm-5 bg-primary rounded-15 mb-4">
+						<h4 class="text-white mb-2 mb-sm-3 mb-xl-4">Bangladesh Location</h4>
+						<p class="text-white">H #102, Ward No 25, Talaimari<br/>
+							Rajshahi, Bangladesh</p>
+					</div>
+					{# <img {{ img_attrs(asset('build/img/contact/bd_map.png')) }} class="img-fluid" alt=""> #}
+					<div class="map-frame">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3634.6122413885428!2d88.62043471430945!3d24.35999637113337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef22cb7d9113%3A0x801cd9a338800e99!2sMacroman%20Solutions!5e0!3m2!1sen!2sbd!4v1659214151390!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="px-3 px-sm-4 py-3 py-sm-5 mb-4 bg-primary rounded-15">
+						<h4 class="text-white mb-2 mb-sm-3 mb-xl-4">USA Location</h4>
+						<p class="text-white">1021 E Lincolnway unit #229<br/>
+							Cheyenne, WY 82001</p>
+					</div>
+					{# <img {{ img_attrs(asset('build/img/contact/usa_map.png')) }} class="img-fluid" alt=""> #}
+					<div class="map-frame">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.9361215825074!2d-104.80254918521206!3d41.13592041951036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876f3ade3e61a357%3A0x23a6c986d1057b2d!2s1021%20E%20Lincolnway%20%23229%2C%20Cheyenne%2C%20WY%2082001%2C%20USA!5e0!3m2!1sen!2sbd!4v1659243243084!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}
