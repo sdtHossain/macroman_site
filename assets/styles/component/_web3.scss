@@ -24,31 +24,9 @@
   }
 }
 
-.technology-we-use {
+.technology-we-use.web3 {
   padding-top: 80px;
   padding-bottom: 80px;
-  .language-wrap {
-    .card {
-      position: relative;
-      border: none;
-      border-radius: 15px;
-
-      &:after {
-        content: "";
-        background: #271f30;
-        opacity: 0.05;
-        filter: blur(40px);
-        border-radius: 28px;
-        width: 80%;
-        position: absolute;
-        height: 30px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        z-index: -1;
-      }
-    }
-  }
 }
 
 .projects-carousel {
