@@ -4,6 +4,10 @@
   }
   .project-info {
     position: relative;
+
+    .project-img {
+      width: 100%;
+    }
     .logo-img {
       position: absolute;
       left: 36px;
@@ -69,7 +73,51 @@
   }
 }
 
-
 .web3-client-saying {
   margin-top: 160px;
+}
+
+@media (max-width: 991px) {
+  .task-right-box {
+    padding: 48px;
+  }
+  .task-right-box .task-list .list-inline-item {
+    width: 100%;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .projects-carousel .projects-meta img {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .web3-banner .section-title {
+    margin-bottom: 20px;
+  }
+  .projects-carousel {
+    .projects-meta {
+      flex-direction: column;
+
+      img {
+        margin-right: 0;
+        max-width: 150px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .technology-we-use.web3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .web3-client-saying {
+    margin-top: 60px;
+  }
 }
