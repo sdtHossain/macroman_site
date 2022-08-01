@@ -197,4 +197,16 @@ class BaseController extends AbstractController
             'form' => $form->createView(),
         ], $response);
     }
+
+
+    /**
+     * @Route("/web3", name="web3")
+     */
+    public function web3(Request $request)
+    {
+        $this->setSeo(null, null);
+
+        return $this->render('web3.html.twig', [
+        ]);
+    }
 }
