@@ -9,6 +9,12 @@ import './styles/app.scss';
 import 'bootstrap';
 window.bootstrap = require("bootstrap");
 
+// require jQuery normally
+const $ = require('jquery');
+
+// create global $ and jQuery variables
+global.$ = global.jQuery = $;
+
 import {
 	library,
 	dom,
@@ -46,3 +52,6 @@ library.add(faBars);
 library.add(faTimes);
 
 dom.watch();
+
+
+import './script';
