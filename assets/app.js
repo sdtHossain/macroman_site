@@ -57,6 +57,3 @@ library.add(faBars);
 library.add(faTimes);
 
 dom.watch();
-
-
-import './script';
