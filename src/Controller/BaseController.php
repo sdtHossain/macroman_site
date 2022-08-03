@@ -209,4 +209,15 @@ class BaseController extends AbstractController
         return $this->render('web3.html.twig', [
         ]);
     }
+
+    /**
+     * @Route("/portfolio", name="portfolio")
+     */
+    public function portfolio(Request $request)
+    {
+        $this->setSeo(null, null);
+
+        return $this->render('portfolio.html.twig', [
+        ]);
+    }
 }

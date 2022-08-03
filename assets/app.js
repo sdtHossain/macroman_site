@@ -30,6 +30,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
 import {
+	faChevronDown
+} from "@fortawesome/free-solid-svg-icons/faChevronDown";
+
+import {
 	faBars
 } from "@fortawesome/free-solid-svg-icons/faBars";
 
@@ -47,6 +51,7 @@ config.mutateApproach = 'sync';
 
 library.add(faGem);
 library.add(faChevronRight);
+library.add(faChevronDown);
 library.add(faFacebook);
 library.add(faBars);
 library.add(faTimes);

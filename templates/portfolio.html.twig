@@ -1,0 +1,588 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<!-- banner -->
+	<div class="container">
+		<div class="d-flex align-items-center justify-content-between">
+			<h3 class="section-title">Portfolio</h3>
+			<nav class="d-none d-lg-block bg-white px-5 py-0 rounded-15 portfolio-tabs">
+				<div
+					class="nav nav-tabs" id="nav-tab" role="tablist">
+					{# we have to put feature-title in two places for responsive issue. Please insert feature-title into tab-pane too, it shows on mobile  #}
+					<button class="nav-link active" id="nav-all-work-tab" data-bs-toggle="tab" data-bs-target="#nav-all-work" type="button" role="tab" aria-controls="nav-all-work" aria-selected="true">All Work</button>
+					<button class="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="false">Design</button>
+					<button class="nav-link" id="nav-develope-tab" data-bs-toggle="tab" data-bs-target="#nav-develope" type="button" role="tab" aria-controls="nav-develope" aria-selected="false">Develope</button>
+					<button class="nav-link" id="nav-poss-app-tab" data-bs-toggle="tab" data-bs-target="#nav-poss-app" type="button" role="tab" aria-controls="nav-poss-app" aria-selected="false">Poss App</button>
+					<button class="nav-link" id="nav-ai-solution-tab" data-bs-toggle="tab" data-bs-target="#nav-ai-solution" type="button" role="tab" aria-controls="nav-ai-solution" aria-selected="false">Ai Solution</button>
+				</div>
+			</nav>
+		</div>
+		<div class="tab-content portfolio-tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active mb-3 mb-lg-0" id="nav-all-work" role="tabpanel" aria-labelledby="nav-all-work-tab" tabindex="0">
+				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAllWork" aria-expanded="true" aria-controls="collapseAllWork">
+					All Work
+				</button>
+				<div class="collapse show" id="collapseAllWork">
+					<div class="pt-lg-5">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_online_education.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Online Education (LMS)</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>OLP Group</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Web Development</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_dashboard.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Hisab Ai Dashboard</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_e-commerce_website.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Ecommerce Website</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Ecommerce</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_online_shop.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Online Shop Website</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_landing.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Landing Page For Hisab</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Hisab Ai</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Ecommerce</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_digital_agency_web.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Digital Agency Web</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="text-center pt-64">
+							<a href="#" class="btn btn-outline-secondary">
+								<span class="me-3">View More</span>
+								<i class="fas fa-chevron-down"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab" tabindex="0">
+				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesign" aria-expanded="false" aria-controls="collapseDesign">
+					Design
+				</button>
+				<div class="collapse" id="collapseDesign">
+					<div class="pt-lg-5">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_e-commerce_website.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Ecommerce Website</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Ecommerce</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_landing.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Landing Page For Hisab</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Hisab Ai</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Ecommerce</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-develope" role="tabpanel" aria-labelledby="nav-develope-tab" tabindex="0">
+				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevelope" aria-expanded="false" aria-controls="collapseDevelope">
+					Develope
+				</button>
+				<div class="collapse" id="collapseDevelope">
+					<div class="pt-lg-5">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_online_education.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Online Education (LMS)</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>OLP Group</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Web Development</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-poss-app" role="tabpanel" aria-labelledby="nav-poss-app-tab" tabindex="0">
+				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePossApp" aria-expanded="false" aria-controls="collapsePossApp">
+					Poss App
+				</button>
+				<div class="collapse" id="collapsePossApp">
+					<div class="pt-lg-5">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_dashboard.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Hisab Ai Dashboard</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_online_shop.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Online Shop Website</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_digital_agency_web.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Digital Agency Web</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-ai-solution" role="tabpanel" aria-labelledby="nav-ai-solution-tab" tabindex="0">
+				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAiSolution" aria-expanded="false" aria-controls="collapseAiSolution">
+					Ai Solution
+				</button>
+				<div class="collapse" id="collapseAiSolution">
+					<div class="pt-lg-5">
+						<div class="row row-cols-1 row-cols-lg-2 g-4">
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_online_education.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Online Education (LMS)</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>OLP Group</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Web Development</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_dashboard.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Hisab Ai Dashboard</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_e-commerce_website.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Ecommerce Website</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Ecommerce</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_online_shop.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Online Shop Website</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_landing.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Landing Page For Hisab</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Hisab Ai</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Ecommerce</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="rounded-15 overflow-hidden project">
+									<img {{ img_attrs(asset('build/img/portfolio/project_digital_agency_web.png')) }} class="img-fluid w-100">
+									<div class="project-meta p-4">
+										<h6>Digital Agency Web</h6>
+										<div class="d-flex justify-content-between">
+											<div>
+												<span class="fw-bold d-block">Client:</span>
+												<span>Mcm Agency</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Category:</span>
+												<span>Poss App</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Date:</span>
+												<span>24 Mar 2022</span>
+											</div>
+											<div>
+												<span class="fw-bold d-block">Website:</span>
+												<span>
+													<a href="#" class="text-decoration-none">Click Here</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
