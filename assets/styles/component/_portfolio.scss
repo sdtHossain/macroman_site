@@ -36,14 +36,13 @@
 
 .portfolio-tab-content {
   .project {
-
     &:hover {
       .project-meta {
         background: $primary;
-        color: #FFF;
+        color: #fff;
 
         h6 {
-          color: #FFF;
+          color: #fff;
         }
         a {
           color: $secondary;
@@ -53,7 +52,7 @@
     .project-meta {
       background: #fff;
       font-size: 14px;
-      line-height: 21px;
+      transition: 0.3s ease;
     }
   }
 }
@@ -69,9 +68,38 @@
   .portfolio-tab-content {
     &.tab-content > .tab-pane {
       display: block;
+      .content-wrapper {
+        background: rgba(#ddd, 0.8);
+        padding: 16px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+
+      button {
+        .icon-arrow {
+          transition: 0.3s ease;
+        }
+
+        &[aria-expanded="true"] {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          .icon-arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
     }
     .fade:not(.show) {
       opacity: 1;
     }
   }
+}
+@media (max-width: 575px) {
+    .portfolio-tab-content {
+      .project-meta {
+        h6 {
+          font-size: 18px;
+        }
+      }
+    }
 }

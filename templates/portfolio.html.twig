@@ -22,18 +22,19 @@
 		</div>
 		<div class="tab-content portfolio-tab-content" id="nav-tabContent">
 			<div class="tab-pane fade show active mb-3 mb-lg-0" id="nav-all-work" role="tabpanel" aria-labelledby="nav-all-work-tab" tabindex="0">
-				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAllWork" aria-expanded="true" aria-controls="collapseAllWork">
+				<button class="btn btn-primary w-100 text-white text-start d-flex d-lg-none justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAllWork" aria-expanded="true" aria-controls="collapseAllWork">
 					All Work
+					<i class="fas fa-chevron-down icon-arrow"></i>
 				</button>
-				<div class="collapse show" id="collapseAllWork">
+				<div class="collapse show content-wrapper" id="collapseAllWork">
 					<div class="pt-lg-5">
 						<div class="row row-cols-1 row-cols-lg-2 g-4">
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_online_education.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Online Education (LMS)</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>OLP Group</span>
@@ -59,9 +60,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_dashboard.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Hisab Ai Dashboard</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -87,9 +88,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_e-commerce_website.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Ecommerce Website</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -115,9 +116,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_online_shop.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Online Shop Website</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -143,9 +144,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_landing.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Landing Page For Hisab</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Hisab Ai</span>
@@ -171,9 +172,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_digital_agency_web.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Digital Agency Web</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -208,18 +209,19 @@
 				</div>
 			</div>
 			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab" tabindex="0">
-				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesign" aria-expanded="false" aria-controls="collapseDesign">
+				<button class="btn btn-primary w-100 text-white text-start d-flex d-lg-none justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDesign" aria-expanded="false" aria-controls="collapseDesign">
 					Design
+					<i class="fas fa-chevron-down icon-arrow"></i>
 				</button>
-				<div class="collapse" id="collapseDesign">
+				<div class="collapse content-wrapper" id="collapseDesign">
 					<div class="pt-lg-5">
 						<div class="row row-cols-1 row-cols-lg-2 g-4">
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_e-commerce_website.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Ecommerce Website</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -245,9 +247,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_landing.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Landing Page For Hisab</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Hisab Ai</span>
@@ -275,18 +277,19 @@
 				</div>
 			</div>
 			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-develope" role="tabpanel" aria-labelledby="nav-develope-tab" tabindex="0">
-				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevelope" aria-expanded="false" aria-controls="collapseDevelope">
+				<button class="btn btn-primary w-100 text-white text-start d-flex d-lg-none justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevelope" aria-expanded="false" aria-controls="collapseDevelope">
 					Develope
+					<i class="fas fa-chevron-down icon-arrow"></i>
 				</button>
-				<div class="collapse" id="collapseDevelope">
+				<div class="collapse content-wrapper" id="collapseDevelope">
 					<div class="pt-lg-5">
 						<div class="row row-cols-1 row-cols-lg-2 g-4">
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_online_education.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Online Education (LMS)</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>OLP Group</span>
@@ -314,18 +317,19 @@
 				</div>
 			</div>
 			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-poss-app" role="tabpanel" aria-labelledby="nav-poss-app-tab" tabindex="0">
-				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePossApp" aria-expanded="false" aria-controls="collapsePossApp">
+				<button class="btn btn-primary w-100 text-white text-start d-flex d-lg-none justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePossApp" aria-expanded="false" aria-controls="collapsePossApp">
 					Poss App
+					<i class="fas fa-chevron-down icon-arrow"></i>
 				</button>
-				<div class="collapse" id="collapsePossApp">
+				<div class="collapse content-wrapper" id="collapsePossApp">
 					<div class="pt-lg-5">
 						<div class="row row-cols-1 row-cols-lg-2 g-4">
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_dashboard.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Hisab Ai Dashboard</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -351,9 +355,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_online_shop.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Online Shop Website</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -379,9 +383,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_digital_agency_web.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Digital Agency Web</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -409,18 +413,19 @@
 				</div>
 			</div>
 			<div class="tab-pane fade mb-3 mb-lg-0" id="nav-ai-solution" role="tabpanel" aria-labelledby="nav-ai-solution-tab" tabindex="0">
-				<button class="btn btn-primary w-100 text-white text-start d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAiSolution" aria-expanded="false" aria-controls="collapseAiSolution">
+				<button class="btn btn-primary w-100 text-white text-start d-flex d-lg-none justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAiSolution" aria-expanded="false" aria-controls="collapseAiSolution">
 					Ai Solution
+					<i class="fas fa-chevron-down icon-arrow"></i>
 				</button>
-				<div class="collapse" id="collapseAiSolution">
+				<div class="collapse content-wrapper" id="collapseAiSolution">
 					<div class="pt-lg-5">
 						<div class="row row-cols-1 row-cols-lg-2 g-4">
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_online_education.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Online Education (LMS)</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>OLP Group</span>
@@ -446,9 +451,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_dashboard.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Hisab Ai Dashboard</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -474,9 +479,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_e-commerce_website.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Ecommerce Website</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -502,9 +507,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_online_shop.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Online Shop Website</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
@@ -530,9 +535,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_hisab_landing.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Landing Page For Hisab</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Hisab Ai</span>
@@ -558,9 +563,9 @@
 							<div class="col">
 								<div class="rounded-15 overflow-hidden project">
 									<img {{ img_attrs(asset('build/img/portfolio/project_digital_agency_web.png')) }} class="img-fluid w-100">
-									<div class="project-meta p-4">
+									<div class="project-meta p-2 p-sm-4">
 										<h6>Digital Agency Web</h6>
-										<div class="d-flex justify-content-between">
+										<div class="d-flex flex-column flex-sm-row justify-content-between">
 											<div>
 												<span class="fw-bold d-block">Client:</span>
 												<span>Mcm Agency</span>
