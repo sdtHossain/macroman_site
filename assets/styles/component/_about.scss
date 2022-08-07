@@ -91,6 +91,7 @@
 }
 
 .our-clients.about {
+  padding-top: 64px;
   .content-wrapper {
     border-radius: 15px;
     position: relative;
@@ -155,6 +156,9 @@
 }
 
 @media (max-width: 991px) {
+  .our-clients.about {
+    padding-top: 0;
+  }
   .mission-vission .pt-136 {
     padding-top: 20px;
   }
