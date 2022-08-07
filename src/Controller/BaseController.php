@@ -220,4 +220,14 @@ class BaseController extends AbstractController
         return $this->render('portfolio.html.twig', [
         ]);
     }
+
+    /**
+     * @Route("/service", name="service")
+     */
+    public function service(Request $request)
+    {
+        $this->setSeo(null, null);
+
+        return $this->render('service.html.twig');
+    }
 }

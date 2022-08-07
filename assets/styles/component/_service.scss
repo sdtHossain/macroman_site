@@ -1,0 +1,60 @@
+.service-tabs {
+    // &.nav-tabs .nav-link:hover,
+    // &.nav-tabs .nav-link:focus {
+    //     border-color: transparent;
+    // }
+    // &.nav-tabs .nav-link.active,
+    // &.nav-tabs .nav-item.show .nav-link {
+    //     background-color: transparent;
+    //     border: none;
+    //     border-bottom: 1px solid $primary;
+    // }
+
+    &.nav-tabs .nav-link {
+        color: rgba(39, 31, 48, 0.65);
+    }
+
+    &.nav-tabs .nav-link:hover,
+    &.nav-tabs .nav-link:focus {
+        border-color: transparent;
+    }
+    &.nav-tabs .nav-link.active,
+    &.nav-tabs .nav-item.show .nav-link {
+        background-color: transparent;
+        color: $primary;
+        border-color: transparent;
+        border-bottom: 1px solid $primary;
+    }
+}
+
+.features-you-get,
+.service-technology-we-use {
+    margin-top: 128px;
+}
+
+.project-img {
+    position: relative;
+
+    .create-for {
+        position: absolute;
+        padding: 8px 16px;
+        border-radius: 4px;
+        top: 24px;
+        left: 24px;
+        opacity: 0;
+        transition: .3s ease;
+        .title {
+            font-size: 10px;
+        }
+
+        img:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+
+    &:hover {
+        .create-for {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,178 @@
+{% extends "base.html.twig" %}
+{% block javascripts %}
+	{{ parent() }}
+	{{ encore_entry_script_tags('portfoliojs') }}
+{% endblock %}
+{% block body %}
+	<div class="container">
+		<nav>
+			<div class="nav nav-tabs service-tabs justify-content-center" id="nav-tab" role="tablist">
+				<button class="nav-link active" id="nav-pos-app-tab" data-bs-toggle="tab" data-bs-target="#nav-pos-app" type="button" role="tab" aria-controls="nav-pos-app" aria-selected="true">Pos App Solution</button>
+				<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+				<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+			</div>
+		</nav>
+		<div class="tab-content pt-64" id="nav-tabContent">
+			<div
+				class="tab-pane fade show active" id="nav-pos-app" role="tabpanel" aria-labelledby="nav-pos-app-tab" tabindex="0">
+				<!-- banner -->
+				<div class="row">
+					<div class="col-lg-6 project-img">
+						<img {{ img_attrs(asset('build/img/service/project_hisab_dashboard.png')) }} class="img-fluid w-100">
+
+						<div class="bg-primary create-for">
+							<p class="fw-bold text-white title">We Create Pos App for</p>
+							<div class="d-flex justify-content-between">
+								<div><img {{ img_attrs(asset('build/img/service/icon_windows.png')) }} class="img-fluid"></div>
+								<div><img {{ img_attrs(asset('build/img/service/icon_mac.png')) }} class="img-fluid"></div>
+								<div><img {{ img_attrs(asset('build/img/service/icon_mobile.png')) }} class="img-fluid"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h4 class="mb-3">Pos Solutions</h4>
+						<p>You are one step away to bring your dream ideas to reality. We are here to help you to build software, mobile applications, data driven solutions</p>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<h6>Pos App Features</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper</p>
+							</div>
+
+							<div class="col-lg-6">
+								<h6>Pos App Features</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper</p>
+							</div>
+
+							<div class="col-lg-6">
+								<h6>Pos App Features</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper</p>
+							</div>
+
+							<div class="col-lg-6">
+								<h6>Pos App Features</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam netus sit nec quis proin. Mauris, ultrices mi semper</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- technology expertize -->
+				<div class="technology-we-use service-technology-we-use">
+					<h3 class="mb-64">Our Technology
+						<span class="fw-bold text-primary">Expertise</span>
+					</h3>
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_angular.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">Angular</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_codeIgniter.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">CodeIgniter</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_laravel.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">Laravel</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_nodejs.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">Node.js</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_symfony.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">Symfony</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_react.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">React</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_ionic.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">Ionic</h6>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="d-flex icon-box bg-white align-items-center mb-4">
+								<img {{ img_attrs(asset('build/img/common/icon_hybrid.png')) }} class="me-2" alt="logos here">
+								<h6 class="mb-0">Hybrid</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Features you will get -->
+				<div class="features-you-get">
+					<div class="row">
+						<div class="col-lg-4">
+							<h3>
+								<span class="fw-bold text-primary">Features</span>
+								You Will Get</h3>
+						</div>
+						<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="border-top pt-4 mb-5">
+										<h6 class="d-flex justify-content-between">
+											<span>Features One</span>
+											<span>
+												<i class="fas fa-gem text-primary"></i>
+											</span>
+										</h6>
+										<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="border-top pt-4 mb-5">
+										<h6 class="d-flex justify-content-between">
+											<span>Features One</span>
+											<span>
+												<i class="fas fa-gem text-primary"></i>
+											</span>
+										</h6>
+										<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="border-top pt-4">
+										<h6 class="d-flex justify-content-between">
+											<span>Features One</span>
+											<span>
+												<i class="fas fa-gem text-primary"></i>
+											</span>
+										</h6>
+										<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="border-top pt-4">
+										<h6 class="d-flex justify-content-between">
+											<span>Features One</span>
+											<span>
+												<i class="fas fa-gem text-primary"></i>
+											</span>
+										</h6>
+										<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">profile</div>
+			<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">contact</div>
+		</div>
+	</div>
+{% endblock %}
