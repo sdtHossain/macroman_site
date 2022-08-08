@@ -35,6 +35,22 @@ import {
 	faTimes
 } from "@fortawesome/free-solid-svg-icons/faTimes";
 
+import {
+	faCheckCircle
+} from "@fortawesome/free-solid-svg-icons/faCheckCircle";
+
+import {
+	faList
+} from "@fortawesome/free-solid-svg-icons/faList";
+
+import {
+	faFilter
+} from "@fortawesome/free-solid-svg-icons/faFilter";
+
+import {
+	faShapes
+} from "@fortawesome/free-solid-svg-icons/faShapes";
+
 
 import {
 	faFacebook
@@ -49,5 +65,9 @@ library.add(faChevronDown);
 library.add(faFacebook);
 library.add(faBars);
 library.add(faTimes);
+library.add(faCheckCircle);
+library.add(faList);
+library.add(faFilter);
+library.add(faShapes);
 
 dom.watch();
