@@ -51,6 +51,21 @@ import {
 	faShapes
 } from "@fortawesome/free-solid-svg-icons/faShapes";
 
+import {
+	faCopy
+} from "@fortawesome/free-solid-svg-icons/faCopy";
+
+import {
+	faStickyNote
+} from "@fortawesome/free-solid-svg-icons/faStickyNote";
+
+import {
+	faCode
+} from "@fortawesome/free-solid-svg-icons/faCode";
+
+import {
+	faNewspaper
+} from "@fortawesome/free-solid-svg-icons/faNewspaper";
 
 import {
 	faFacebook
@@ -69,5 +84,9 @@ library.add(faCheckCircle);
 library.add(faList);
 library.add(faFilter);
 library.add(faShapes);
+library.add(faCopy);
+library.add(faStickyNote);
+library.add(faCode);
+library.add(faNewspaper);
 
 dom.watch();
