@@ -310,7 +310,7 @@
 									<span class="fw-bold text-primary">Start Your Project</span>
 									Today</h3>
 								<p>We will contact you within 30 minutes to arrange an
-																																																																							initial discussion.</p>
+																																																																																initial discussion.</p>
 								<img {{ img_attrs(asset('build/img/software/mcm_shop_start_project.png')) }} class="img-fluid" alt="logos here">
 							</div>
 							<div class="col-lg-6">
@@ -356,7 +356,7 @@
 				class="collapse content-wrapper" id="collapseMCMShop">
 				<!-- mcm solution -->
 				<div class="container">
-					<div class="row align-items-center mcm-solution">
+					<div class="row align-items-center mcm-solution flex-column-reverse flex-lg-row">
 						<div class="col-lg-6">
 							<div>
 								<h3 class="section-title">E-Com
@@ -385,8 +385,8 @@
 								<a href="#" class="btn btn-primary text-white">Start A Project</a>
 							</div>
 						</div>
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_solution.png')) }} class="img-fluid w-100">
+						<div class="col-lg-6 img-wrapper">
+							<img {{ img_attrs(asset('build/img/software/mcm_shop_solution.png')) }} class="img-fluid">
 						</div>
 					</div>
 				</div>
@@ -396,84 +396,98 @@
 
 				<!-- Feature of MCM Shop -->
 				<div class="mcm-feature container pb-64">
-					<h3 class="section-title">Features of<br>
+					<h3 class="section-title">Features of<br class="d-none d-lg-block">
 						<span class="text-primary fw-bold">Mcm Shop</span>
 					</h3>
-					<div class="row mt-64 mb-64 align-items-center">
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_minimal_design.png')) }} class="img-fluid w-100">
-						</div>
-						<div class="col-lg-6">
-							<div class="badge mb-4 d-flex justify-content-center align-items-center">
-								<i class="fas fa-list text-primary"></i>
+
+					<div class="feature">
+						<div class="row mt-64 mb-64 align-items-center">
+							<div class="col-lg-6 img-wrapper">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_minimal_design.png')) }} class="img-fluid">
 							</div>
-							<h4 class="mb-3">Minimal &amp; Modern Homepage Interface</h4>
-							<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+							<div class="col-lg-6">
+								<div class="badge mb-2 mb-lg-4 d-flex justify-content-center align-items-center">
+									<i class="fas fa-list text-primary"></i>
+								</div>
+								<h4 class="mb-3">Minimal &amp; Modern Homepage Interface</h4>
+								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+							</div>
 						</div>
 					</div>
 
-					<div class="row mt-64 mb-64 align-items-center">
-						<div class="col-lg-6">
-							<div class="badge mb-4 d-flex justify-content-center align-items-center">
-								<i class="fas fa-filter text-primary"></i>
+
+					<div class="feature">
+						<div class="row mt-64 mb-64 align-items-center flex-column-reverse flex-lg-row">
+							<div class="col-lg-6">
+								<div class="badge mb-2 mb-lg-4 d-flex justify-content-center align-items-center">
+									<i class="fas fa-filter text-primary"></i>
+								</div>
+								<h4 class="mb-3">Dynamic pricing, Abandon Cart</h4>
+								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
 							</div>
-							<h4 class="mb-3">Dynamic pricing, Abandon Cart</h4>
-							<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
-						</div>
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_dynamic_pricing.png')) }} class="img-fluid w-100">
+							<div class="col-lg-6 img-wrapper">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_dynamic_pricing.png')) }} class="img-fluid">
+							</div>
 						</div>
 					</div>
 
-					<div class="row mt-64 mb-64 align-items-center">
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_dashboard.png')) }} class="img-fluid w-100">
-						</div>
-						<div class="col-lg-6">
-							<div class="badge mb-4 d-flex justify-content-center align-items-center">
-								<i class="fas fa-shapes text-primary"></i>
+					<div class="feature">
+						<div class="row mt-64 mb-64 align-items-center">
+							<div class="col-lg-6 img-wrapper">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_dashboard.png')) }} class="img-fluid">
 							</div>
-							<h4 class="mb-3">User Friendly Dashboard</h4>
-							<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+							<div class="col-lg-6">
+								<div class="badge mb-2 mb-lg-4 d-flex justify-content-center align-items-center">
+									<i class="fas fa-shapes text-primary"></i>
+								</div>
+								<h4 class="mb-3">User Friendly Dashboard</h4>
+								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+							</div>
 						</div>
 					</div>
 
-					<div class="row mt-64 mb-64 align-items-center">
-						<div class="col-lg-6">
-							<div class="badge mb-4 d-flex justify-content-center align-items-center">
-								<i class="fas fa-filter text-primary"></i>
+					<div class="feature">
+						<div class="row mt-64 mb-64 align-items-center flex-column-reverse flex-lg-row">
+							<div class="col-lg-6">
+								<div class="badge mb-2 mb-lg-4 d-flex justify-content-center align-items-center">
+									<i class="fas fa-filter text-primary"></i>
+								</div>
+								<h4 class="mb-3">Add Products, Categories, Orders In One Place</h4>
+								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
 							</div>
-							<h4 class="mb-3">Add Products, Categories, Orders In One Place</h4>
-							<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
-						</div>
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_order_in_one_place.png')) }} class="img-fluid w-100">
+							<div class="col-lg-6 img-wrapper">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_order_in_one_place.png')) }} class="img-fluid">
+							</div>
 						</div>
 					</div>
 
-					<div class="row mt-64 mb-64 align-items-center">
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_check_and_manage_order.png')) }} class="img-fluid w-100">
-						</div>
-						<div class="col-lg-6">
-							<div class="badge mb-4 d-flex justify-content-center align-items-center">
-								<i class="fas fa-shapes text-primary"></i>
+					<div class="feature">
+						<div class="row mt-64 mb-64 align-items-center">
+							<div class="col-lg-6 img-wrapper">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_check_and_manage_order.png')) }} class="img-fluid">
 							</div>
-							<h4 class="mb-3">Check and Manage Order List Easily</h4>
-							<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+							<div class="col-lg-6">
+								<div class="badge mb-2 mb-lg-4 d-flex justify-content-center align-items-center mt-3 mt-lg-0">
+									<i class="fas fa-shapes text-primary"></i>
+								</div>
+								<h4 class="mb-3">Check and Manage Order List Easily</h4>
+								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
+							</div>
 						</div>
 					</div>
 
-					<div class="row mt-64 align-items-center">
-						<div class="col-lg-6">
-							<div class="badge mb-4 d-flex justify-content-center align-items-center">
-								<i class="fas fa-filter text-primary"></i>
+					<div class="feature">
+						<div class="row mt-64 align-items-center flex-column-reverse flex-lg-row">
+							<div class="col-lg-6">
+								<div class="badge mb-2 mb-lg-4 d-flex justify-content-center align-items-center">
+									<i class="fas fa-filter text-primary"></i>
+								</div>
+								<h4 class="mb-3">Easy to Order with Manual Payment Method</h4>
+								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
 							</div>
-							<h4 class="mb-3">Easy to Order with Manual Payment Method</h4>
-							<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
-						</div>
-						<div class="col-lg-6">
-							<img {{ img_attrs(asset('build/img/software/mcm_shop_manual_payment_method.png')) }} class="img-fluid w-100">
+							<div class="col-lg-6 img-wrapper">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_manual_payment_method.png')) }} class="img-fluid">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -483,13 +497,13 @@
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-lg-4">
-								<h3 class="section-title text-white mb-0">Development
+								<h3 class="section-title text-white">Development
 									<span class="fw-bold">Process</span>
 								</h3>
 							</div>
 							<div class="col-lg-8">
-								<div class="row">
-									<div class="col-md-3">
+								<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4">
+									<div class="col">
 										<div class="bg-primary rounded-2 d-flex flex-column justify-content-center align-items-center item w-100">
 											<div class="content">
 												<i class="fas fa-copy text-white"></i>
@@ -497,7 +511,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col">
 										<div class="bg-primary rounded-2 d-flex flex-column justify-content-center align-items-center item w-100">
 											<div class="content">
 												<i class="fas fa-sticky-note text-white"></i>
@@ -505,7 +519,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col">
 										<div class="bg-primary rounded-2 d-flex flex-column justify-content-center align-items-center item w-100">
 											<div class="content">
 												<i class="fas fa-code text-white"></i>
@@ -513,7 +527,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-3">
+									<div class="col">
 										<div class="bg-primary rounded-2 d-flex flex-column justify-content-center align-items-center item w-100">
 											<div class="content">
 												<i class="fas fa-newspaper text-white"></i>
@@ -530,10 +544,10 @@
 				<!-- under the hood -->
 				<div class="under-the-hood py-64">
 					<div class="container">
-						<div class="row">
+						<div class="row flex-column-reverse flex-lg-row">
 							<div class="col-lg-6">
 								<div class="row">
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_php.png')) }} class="" alt="logos here">
@@ -541,7 +555,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_symfony.png')) }} class="" alt="logos here">
@@ -549,7 +563,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_nodejs.png')) }} class="" alt="logos here">
@@ -557,7 +571,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_webpack.png')) }} class="" alt="logos here">
@@ -565,7 +579,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_docker.png')) }} class="" alt="logos here">
@@ -573,7 +587,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_twig.png')) }} class="" alt="logos here">
@@ -581,7 +595,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_bootstrap.png')) }} class="" alt="logos here">
@@ -589,7 +603,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_sass.png')) }} class="" alt="logos here">
@@ -597,7 +611,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4 mb-4">
+									<div class="col-6 col-sm-4 mb-4">
 										<div class="item">
 											<div class="content bg-white">
 												<img {{ img_attrs(asset('build/img/common/icon_stimulus.png')) }} class="" alt="logos here">
@@ -611,7 +625,7 @@
 								<h3 class="section-title mb-3">Under The Hood</h3>
 								<p>As a Financial Technology startup, Finch needed to establis itself as a brand from the ground up. They started securing a name and identifying customer personas, then brought on eDesign.</p>
 
-								<img {{ img_attrs(asset('build/img/software/mcm_shop_under_the_hood.png')) }} class="img-fluid w-100">
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_under_the_hood.png')) }} class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -626,8 +640,8 @@
 									<span class="fw-bold text-primary">Start Your Project</span>
 									Today</h3>
 								<p>We will contact you within 30 minutes to arrange an
-																																																																																										                initial discussion.</p>
-								<img {{ img_attrs(asset('build/img/software/mcm_shop_start_project.png')) }} class="" alt="logos here">
+																																																																																initial discussion.</p>
+								<img {{ img_attrs(asset('build/img/software/mcm_shop_start_project.png')) }} class="img-fluid" alt="logos here">
 							</div>
 							<div class="col-lg-6">
 								<div class="form-wrap bg-white p-64 rounded-15">
