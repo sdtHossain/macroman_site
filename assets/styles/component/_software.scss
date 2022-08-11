@@ -1,9 +1,13 @@
 .mcm-solution {
   ul li {
     font-size: 24px;
+    position: relative;
+    padding-left: 28px;
 
     .icon-check {
       font-size: 20px;
+      position: absolute;
+      left: 0;
     }
   }
 
@@ -115,7 +119,7 @@
 
   .mcm-feature {
     .feature {
-      background: #FFF;
+      background: #fff;
       box-shadow: 0px 10px 15px rgb(0 0 0 / 5%);
       border-radius: 8px;
       padding: 16px;
@@ -142,5 +146,19 @@
   }
   .development-process .section-title {
     margin-bottom: 24px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mcm-feature-devider {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .development-process .section-title {
+    font-size: 26px;
+  }
+  .start-project .form-wrap {
+    padding: 24px;
   }
 }
