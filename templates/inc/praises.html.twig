@@ -1,0 +1,92 @@
+<div class="what-clients-saying {{ wrapperClass }}">
+	<div class="container">
+		<div class="row flex-column-reverse flex-lg-row">
+			<div class="col-lg-6 pt-5">
+        <h3 class="section-title">{{ title | raw }}</h3>
+				<p class="mb-3 mb-lg-5 {{ subtitleClass}}">{{ subtitle }}</p>
+				<a href="/" class="btn btn-mcm-outline">See More
+					<i class="fas fa-chevron-right ms-3"></i>
+				</a>
+			</div>
+			<div class="col-lg-6 mb-5 mb-lg-0">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false"
+					data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"><img {{
+								img_attrs(asset('build/img/home/client_img_1.png')) }} class="img-fluid"
+								alt="images here"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"><img {{ img_attrs(asset('build/img/home/client_img_2.png')) }}
+								class="img-fluid" alt="images here"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"><img {{ img_attrs(asset('build/img/home/client_img_3.png')) }}
+								class="img-fluid" alt="images here"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card text-center border-0 rounded-3">
+								<div class="avatar mb-2">
+									<img {{ img_attrs(asset('build/img/home/client_img_1.png')) }} class="img-fluid"
+										alt="images here">
+								</div>
+								<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+								<p>
+									<small class="text-uppercase">CEO / Founder</small>
+								</p>
+								<blockquote class="blockquote mb-0">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac
+									ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+								</blockquote>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card text-center border-0 rounded-3">
+								<div class="avatar mb-2">
+									<img {{ img_attrs(asset('build/img/home/client_img_2.png')) }} class="img-fluid"
+										alt="images here">
+								</div>
+								<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+								<p>
+									<small class="text-uppercase">CEO / Founder</small>
+								</p>
+								<blockquote class="blockquote mb-0">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac
+									ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+								</blockquote>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="card text-center border-0 rounded-3">
+								<div class="avatar mb-2">
+									<img {{ img_attrs(asset('build/img/home/client_img_3.png')) }} class="img-fluid"
+										alt="images here">
+								</div>
+								<p class="text-primary text-uppercase fw-bolder mb-0">Cristina Holmes</p>
+								<p>
+									<small class="text-uppercase">CEO / Founder</small>
+								</p>
+								<blockquote class="blockquote mb-0">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh rhoncus velit quam ac
+									ac. Sit in vitae eu donec. In purus pharetra nec faucibus facilisis nulla.
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
