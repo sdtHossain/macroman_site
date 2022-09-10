@@ -234,32 +234,9 @@
 		<div class="d-flex justify-content-between align-items-center our-clients-wrap bg-secondary">
 			<h3 class="text-white section-title our-client-setion-title text-center text-lg-start fw-bold">Our Most Trusted Clients</h3>
 
-			<ul class="list-inline logos text-center text-lg-start">
-				<li class="list-inline-item">
-					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_shopify.png')) }}
-							class="img-fluid" alt="images here"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_swiftkey.png')) }}
-							class="img-fluid" alt="images here"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_embraer.png')) }}
-							class="img-fluid" alt="images here"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_airbnb.png')) }} class="img-fluid"
-							alt="images here"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_sprint.png')) }} class="img-fluid"
-							alt="images here"></a>
-				</li>
-				<li class="list-inline-item">
-					<a href="/" class=""><img {{ img_attrs(asset('build/img/home/logo_vuforia.png')) }}
-							class="img-fluid" alt="images here"></a>
-				</li>
-			</ul>
+			{% include './inc/trusted_logos.html.twig' with {
+				'wrapperClass': 'text-center text-lg-start',
+			} %}
 
 		</div>
 	</div>

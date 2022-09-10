@@ -301,29 +301,9 @@
 					<div class="col-lg-7 text-center">
 						<h4 class="text-white mb-4 fw-bold">Trusted by Over 60+ Companies</h4>
 
-						<ul class="list-inline logos mb-0 mb-md-4">
-							<li class="list-inline-item">
-								<a href="/"><img {{ img_attrs(asset('build/img/home/logo_shopify.png')) }} class="img-fluid" alt="images here"></a>
-							</li>
-							<li class="list-inline-item">
-								<a href="/"><img {{ img_attrs(asset('build/img/home/logo_swiftkey.png')) }} class="img-fluid" alt="images here"></a>
-							</li>
-							<li class="list-inline-item">
-								<a href="/"><img {{ img_attrs(asset('build/img/home/logo_embraer.png')) }} class="img-fluid" alt="images here"></a>
-							</li>
-						</ul>
-
-						<ul class="list-inline logos">
-							<li class="list-inline-item">
-								<a href="/"><img {{ img_attrs(asset('build/img/home/logo_airbnb.png')) }} class="img-fluid" alt="images here"></a>
-							</li>
-							<li class="list-inline-item">
-								<a href="/"><img {{ img_attrs(asset('build/img/home/logo_sprint.png')) }} class="img-fluid" alt="images here"></a>
-							</li>
-							<li class="list-inline-item">
-								<a href="/"><img {{ img_attrs(asset('build/img/home/logo_vuforia.png')) }} class="img-fluid" alt="images here"></a>
-							</li>
-						</ul>
+						{% include './inc/trusted_logos.html.twig' with {
+							'wrapperClass': 'text-center',
+						} %}
 					</div>
 				</div>
 			</div>

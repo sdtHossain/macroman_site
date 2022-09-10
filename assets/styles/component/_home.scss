@@ -97,22 +97,26 @@
   .our-clients-wrap {
     padding: 56px 70px;
     border-radius: 15px;
+  }
+  h3 {
+    margin-right: 50px;
+    width: 45%;
+    flex-shrink: 0;
+  }
 
-    h3 {
-      margin-right: 50px;
-      width: 39%;
-      flex-shrink: 0;
-    }
+  .logos {
+    margin: -18px;
 
-    .logos {
-      margin: -18px;
+    .list-inline-item {
+      padding: 18px;
 
-      .list-inline-item {
-        padding: 18px;
+      &:not(:last-child) {
+        margin-right: 48px;
+      }
 
-        &:not(:last-child) {
-          margin-right: 0;
-        }
+      img {
+        height: 48px;
+        width: auto;
       }
     }
   }
@@ -190,6 +194,16 @@
 
   .why-choose {
     margin-bottom: 0;
+  }
+
+  .our-clients {
+    .logos {
+      .list-inline-item {
+        &:not(:last-child) {
+          margin-right: 0px;
+        }
+      }
+    }
   }
 }
 
