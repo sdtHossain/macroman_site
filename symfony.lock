@@ -1,7 +1,4 @@
 {
-    "composer/package-versions-deprecated": {
-        "version": "1.11.99.1"
-    },
     "dflydev/dot-access-data": {
         "version": "v3.0.0"
     },
@@ -143,6 +140,20 @@
     },
     "phpdocumentor/type-resolver": {
         "version": "1.4.0"
+    },
+    "phpunit/phpunit": {
+        "version": "9.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "9.3",
+            "ref": "a6249a6c4392e9169b87abf93225f7f9f59025e6"
+        },
+        "files": [
+            ".env.test",
+            "phpunit.xml.dist",
+            "tests/bootstrap.php"
+        ]
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -392,9 +403,6 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.22.0"
     },
-    "symfony/polyfill-php73": {
-        "version": "v1.22.0"
-    },
     "symfony/polyfill-php80": {
         "version": "v1.22.0"
     },
@@ -443,9 +451,6 @@
         "version": "v5.2.1"
     },
     "symfony/security-csrf": {
-        "version": "v5.2.1"
-    },
-    "symfony/security-guard": {
         "version": "v5.2.1"
     },
     "symfony/security-http": {
